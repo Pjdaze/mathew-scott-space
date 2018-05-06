@@ -5,7 +5,7 @@ import './App.css';
 import Routes from './Routes';
 
 const MainLayout = styled.div`
-  height: 50vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
