@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const HomeWrapper = styled.div`
-  height: 100vh;
-`;
+import HomeWrapper from '../containers/HomeWrapper';
+import BannerWrapper from '../containers/BannerWrapper';
+import Header from '../containers/HeaderWrapper';
 
 class Home extends React.Component {
   render() {
-    return <div>Hello Home</div>;
+    return (
+      <HomeWrapper>
+        <Header />
+        <BannerWrapper />
+      </HomeWrapper>
+    );
   }
 }
 
