@@ -11,6 +11,18 @@
 }
 
 /************************
+   Animations
+*************************/
+
+.intro-animatedRight {
+  animation-name: FadeIn, slideInRight;
+}
+
+.intro-animatedLeft {
+  animation-name: FadeIn, slideInLeft;
+}
+
+/************************
           Reset.css
 *************************/
 
