@@ -23,14 +23,17 @@ const IntroWrapper = styled.div`
     line-height: 1.5em;
   }
   .intro-images {
-    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     height: 300px;
     margin: 0 auto;
     width: 95%;
     max-width: 700px;
     img {
-      width: 300px;
+      width: 400px;
+      height: 270px;
     }
   }
 
