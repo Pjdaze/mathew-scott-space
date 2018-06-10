@@ -6,7 +6,8 @@ const NavWrapper = styled.nav`
   color: #222;
   width: 0;
   transition: all 0.2s ease-in-out;
-background-color: #fff;
+background-color: #000;
+opacity: 0.96;
   .logox {
     margin-left: auto;
     .menu-h1{
@@ -70,7 +71,9 @@ padding: 15px;
       display: none;
     }
   }
-
+.z {
+  font-size: 1.8em;
+}
 
 
     position: fixed;
@@ -101,7 +104,7 @@ text-transform: uppercase;
 width: 100%;
 
 
-        color: #222;
+        color: #fff;
         font-family: 'Oswald', sans-serif;
          padding: 40px;
         text-transform: uppercase;
@@ -117,9 +120,7 @@ width: 100%;
       }
       &:nth-child(2) {
         zoom: 1;
-        &:hover {
-          text-shadow: 0 0 50px #f2f2f2;
-        }
+        
       }
       &:last-child {
         zoom: 1;

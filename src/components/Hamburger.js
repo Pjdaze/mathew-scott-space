@@ -66,19 +66,23 @@ const Hamburger = styled.div`
   &.menuActive .line:nth-child(1) {
     top: 18px;
     transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #fff;
   }
 
   &.menuActive .line:nth-child(2) {
     opacity: 0;
     left: -60px;
+    background-color: #fff;
   }
 
   &.menuActive .line:nth-child(3) {
     top: 18px;
     transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #fff;
   }
 
   &.menuActive .line:nth-child(4) {
+    background-color: #fff;
     top: 18px;
     width: 0%;
     left: 50%;

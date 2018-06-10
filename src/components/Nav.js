@@ -12,7 +12,9 @@ export default class Nav extends React.Component {
           <li>
             <div className="logox">
               <NavLink activeClassName="activex" to="/Home">
-                <h1 className="menu-h1">FabianQ</h1>
+                <h1 className="menu-h1">
+                  Fabian<span className="z">Z</span>von
+                </h1>
               </NavLink>
             </div>
           </li>
@@ -24,7 +26,7 @@ export default class Nav extends React.Component {
           </li>
           <li>
             <NavLink activeClassName="activex" to="/Gallery">
-              Work
+              Contact
             </NavLink>
           </li>
 
