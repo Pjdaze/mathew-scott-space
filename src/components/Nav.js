@@ -1,0 +1,56 @@
+import React from 'react';
+import NavWrapper from './containers/NavWrapper';
+import { NavLink } from 'react-router-dom';
+export default class Nav extends React.Component {
+  render() {
+    const { isOpen } = this.props;
+    console.log('Nav is open', isOpen);
+    const NavClass = isOpen ? 'open' : 'nav1';
+    return (
+      <NavWrapper className={NavClass}>
+        <ul>
+          <li>
+            <div className="logox">
+              <NavLink activeClassName="activex" to="/Home">
+                <h1>FabianQ</h1>
+              </NavLink>
+            </div>
+          </li>
+
+          <li>
+            <NavLink onUpdate={() => window.scrollTo(0, 0)} activeClassName="activex" to="/Bio">
+              Bio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="activex" to="/Gallery">
+              Work
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink activeClassName="activex" to="/Contact">
+              <p>Lets Chat!</p>
+            </NavLink>
+          </li>
+
+          <div className="social-nav">
+            <a href="https://www.facebook.com/Razielp123/">
+              <span className="fab fa-facebook" />
+            </a>
+            <a href="#">
+              <span className="fab fa-twitter" />
+            </a>
+
+            <a href="#">
+              <span className="fab fa-instagram" />
+            </a>
+            <a href="mailto:razielp123@gmail.com">
+              <span className="fas fa-at" />
+            </a>
+          </div>
+        </ul>
+      </NavWrapper>
+    );
+  }
+}
