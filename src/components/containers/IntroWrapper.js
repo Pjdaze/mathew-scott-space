@@ -4,8 +4,6 @@ import styled from 'styled-components';
 const IntroWrapper = styled.div`
   border-bottom: 1px solid #ccc;
 
-  justify-content: center;
-  text-align: center;
   .intro-top {
     p {
       font-size: 1.5em;

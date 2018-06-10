@@ -1,17 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fab1 from '../../images/fab4.jpg';
+import Fab8 from '../../images/fab8.png';
 const BannerWrapper = styled.div`
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  height: 100vh;
+  overflow: hidden;
   font-family: 'Titillium Web', sans-serif;
-  background-image: url(${Fab1});
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  .banner-img {
+    width: 250px;
+    img {
+      width: 100%;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: 'FlipH';
+    }
+  }
 `;
 
 export default BannerWrapper;

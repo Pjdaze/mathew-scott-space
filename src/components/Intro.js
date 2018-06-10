@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Fab6 from '../images/fab6.jpg';
 import Fab1 from '../images/fab1.jpg';
-import Fab7 from '../images/fac7.jpg';
+import Fab7 from '../images/fab7.jpg';
 
 import IntroWrapper from './containers/IntroWrapper';
 

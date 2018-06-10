@@ -1,21 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import HomeWrapper from '../containers/HomeWrapper';
-import BannerWrapper from '../containers/BannerWrapper';
-import Header from '../containers/HeaderWrapper';
+import Banner from '../Banner';
+
 import Intro from '../Intro';
-import Footer from '../Footer';
 
 class Home extends React.Component {
   render() {
     return (
       <HomeWrapper>
-        <Header />
-        <BannerWrapper />
+        <Banner />
 
         <Intro />
-
-        <Footer />
       </HomeWrapper>
     );
   }
