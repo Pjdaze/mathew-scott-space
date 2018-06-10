@@ -12,7 +12,7 @@ export default class Nav extends React.Component {
           <li>
             <div className="logox">
               <NavLink activeClassName="activex" to="/Home">
-                <h1>FabianQ</h1>
+                <h1 className="menu-h1">FabianQ</h1>
               </NavLink>
             </div>
           </li>
@@ -35,14 +35,14 @@ export default class Nav extends React.Component {
           </li>
 
           <div className="social-nav">
-            <a href="https://www.facebook.com/Razielp123/">
+            <a href="https://www.facebook.com/fabian.quinonez.35">
               <span className="fab fa-facebook" />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/FabianZvon">
               <span className="fab fa-twitter" />
             </a>
 
-            <a href="#">
+            <a href="https://www.instagram.com/fabianzvon/">
               <span className="fab fa-instagram" />
             </a>
             <a href="mailto:razielp123@gmail.com">

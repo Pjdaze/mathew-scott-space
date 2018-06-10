@@ -3,16 +3,23 @@ import styled from 'styled-components';
 const NavWrapper = styled.nav`
 
 
-  color: #000;
+  color: #222;
   width: 0;
   transition: all 0.2s ease-in-out;
 background-color: #fff;
   .logox {
     margin-left: auto;
-    h1 {
-      font-size: 1.2em;
+    .menu-h1{
 
-    }
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+font-size: calc(1.6em + 0.6vw);
+&:hover{
+        color: #ccc;
+
+      transition: all 140ms ease-in-out;
+}
+}
   }
   &.open {
     width: 100vw;
@@ -83,18 +90,19 @@ padding: 15px;
 
 
       font-size: 1.5em;
-
+text-transform: uppercase;
       width: 100%;
       text-align: center;
       margin-top: 28px;
 
 
       a {
+  
 width: 100%;
 
 
         color: #222;
-        font-family: 'Monoton', sans-serif;
+        font-family: 'Oswald', sans-serif;
          padding: 40px;
         text-transform: uppercase;
         &:hover{

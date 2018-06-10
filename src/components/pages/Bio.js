@@ -62,7 +62,7 @@ const BioWrapper = styled.div`
   .profile {
     padding-bottom: 50px;
     width: 100%;
-    max-width: 900px;
+    max-width: 500px;
     height: 500px;
   }
 
@@ -100,9 +100,7 @@ export default class Bio extends React.Component {
         <div className="bio-info">
           <h4>Hi, I'm Raz</h4>
           <p>
-            blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblaah
-            blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahb
-            blahblahblahblahblahblahblahblahblahblahblah
+            I Love to chat and about the Multiverse
             <br />
             <br />
             Leter i showed one of my paintings to a close friend who i admire as an artist, and to
