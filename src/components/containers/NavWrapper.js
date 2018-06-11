@@ -13,7 +13,7 @@ opacity: 0.96;
     .menu-h1{
 
 font-family: 'Oswald', sans-serif;
-font-weight: 700;
+font-weight: 400;
 font-size: calc(1.6em + 0.6vw);
 &:hover{
         color: #ccc;

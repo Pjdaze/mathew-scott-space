@@ -2,20 +2,30 @@ import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
   overflow: hidden;
+  height: 90vh;
   font-family: 'Titillium Web', sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 200px;
   align-items: center;
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ffffff, #ece9e6); /* Chrome 10-25, Safari 5.1-6 */
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
+    to bottom,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .banner-img {
-    width: 250px;
+    width: 200px;
     img {
       width: 100%;
       -moz-transform: scaleX(-1);

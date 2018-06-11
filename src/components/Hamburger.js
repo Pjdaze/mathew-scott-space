@@ -6,8 +6,8 @@ import Route from '../Routes';
 
 const Hamburger = styled.div`
   .line-wrap {
-    width: 30px;
-    height: 45px;
+    width: 25px;
+    height: 20px;
     position: fixed;
     top: 30px;
     right: 35px;
@@ -56,10 +56,10 @@ const Hamburger = styled.div`
     }
 
     &:nth-child(2) {
-      top: 10px;
+      top: 8px;
     }
     &:nth-child(3) {
-      top: 20px;
+      top: 16px;
     }
   }
 

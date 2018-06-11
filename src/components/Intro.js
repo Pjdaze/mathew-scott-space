@@ -9,12 +9,6 @@ import IntroWrapper from './containers/IntroWrapper';
 const Intro = () => {
   return (
     <IntroWrapper className="flex-center">
-      <div className="flex-center intro-top">
-        <p className="one intro-animatedRight">Executive Producer</p>
-        <p className="two intro-animatedLeft">Creartor</p>
-        <p className="three intro-animatedRight">Lider</p>
-        <p className="four intro-animatedLeft">Futurist</p>
-      </div>
       <section className="intro-bio">
         <p>
           My name is Fabian Q, i'm awesome because i know Mother Monster I like to spend my free
@@ -23,11 +17,7 @@ const Intro = () => {
           with showbiz lets see maybe one day.
         </p>
 
-        <div className="intro-images">
-          <img src={Fab6} alt="fabian with patrick starrr" />
-          <img src={Fab1} alt="fabian with patrick starrr" />
-          <img src={Fab7} alt="fabian with patrick starrr" />
-        </div>
+        <div className="intro-images" />
       </section>
     </IntroWrapper>
   );
