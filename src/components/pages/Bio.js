@@ -11,7 +11,6 @@ const BioWrapper = styled.div`
   margin: 0 auto;
 
   .bio-info {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;

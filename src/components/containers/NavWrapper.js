@@ -10,17 +10,7 @@ background-color: #000;
 opacity: 0.96;
   .logox {
     margin-left: auto;
-    .menu-h1{
-
-font-family: 'Oswald', sans-serif;
-font-weight: 400;
-font-size: calc(1.6em + 0.6vw);
-&:hover{
-        color: #ccc;
-
-      transition: all 140ms ease-in-out;
-}
-}
+  
   }
   &.open {
     width: 100vw;
@@ -29,7 +19,17 @@ transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
         
 
   }
+  .menu-h1{
 
+
+font-weight: 600;
+font-size: calc(1.6em + 0.6vw);
+&:hover{
+        color: #fff;
+
+      transition: all 135ms ease-in-out;
+}
+}
 
 
   li {
@@ -54,12 +54,16 @@ padding: 15px;
     }
 
     &:first-child {
-
+height: 200px;
       margin-right: auto;
+      margin-left: auto;
       margin-top: -20px;
+
+      width: 400px;
+padding: 0;
       zoom: 1;
       &:hover {
-        text-shadow: 0 0 50px #f2f2f2;
+        text-shadow: 0 0 50px #fff;
       }
     }
 
@@ -94,7 +98,7 @@ padding: 15px;
 
       font-size: 1.5em;
 text-transform: uppercase;
-      width: 100%;
+
       text-align: center;
       margin-top: 28px;
 
