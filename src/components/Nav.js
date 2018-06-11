@@ -20,19 +20,13 @@ export default class Nav extends React.Component {
           </li>
 
           <li>
-            <NavLink onUpdate={() => window.scrollTo(0, 0)} activeClassName="activex" to="/Bio">
-              Bio
+            <NavLink onUpdate={() => window.scrollTo(0, 0)} activeClassName="activex" to="/MyDay">
+              Work
             </NavLink>
           </li>
-          <li>
-            <NavLink activeClassName="activex" to="/Gallery">
-              Contact
-            </NavLink>
-          </li>
-
           <li>
             <NavLink activeClassName="activex" to="/Contact">
-              <p>Lets Chat!</p>
+              Contact
             </NavLink>
           </li>
 

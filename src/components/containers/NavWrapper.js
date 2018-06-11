@@ -156,10 +156,12 @@ margin: 45px  auto 0 auto;
 
 .fa , .fab, .fas{
       transition: all 0.1s ease-in-out;
-      color: #222;
+      color: #ccc;
        font-size: calc(20px + 0.5vw);
+       padding: 8px;
       &:hover {
-        color: #888888;
+        color: #fff;
+        font-weight: bold;
       }
     }
 

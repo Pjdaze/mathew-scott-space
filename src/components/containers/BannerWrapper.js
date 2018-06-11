@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
   overflow: hidden;
-  height: 90vh;
+
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   justify-content: flex-end;
@@ -35,6 +35,9 @@ const BannerWrapper = styled.div`
       filter: FlipH;
       -ms-filter: 'FlipH';
     }
+  }
+  @media only screen and (max-width: 767px) {
+    display: block;
   }
 `;
 
