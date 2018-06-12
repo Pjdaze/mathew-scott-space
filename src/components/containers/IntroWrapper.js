@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
   border-bottom: 1px solid #ccc;
-
+  background-color: #ddd;
   .intro-top {
     p {
       font-size: 1.5em;
@@ -15,9 +15,10 @@ const IntroWrapper = styled.div`
     width: 95%;
     max-width: 600px;
     padding: 50px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 300;
     line-height: 1.5em;
+    font-weight: 300;
   }
   .intro-images {
     display: flex;

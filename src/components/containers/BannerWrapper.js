@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
 
-display: grid;
-align-items: center;
-justify-content: center;
-grid-template-columns: 50% 50%;
-  overflow: hidden;
-  height: 95%;
-  
-  min-height: 95vh;
+  height: 100%;
+
+  min-height: 100vh;
 
   font-family: 'Titillium Web', sans-serif;
 
-  padding-top: 50px;
+  padding-top: 100px;
 
   background: #ada996; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
-    #eaeaea,
+    #9a8e8e,
     #dbdbdb,
     #f2f2f2,
     #ada996
@@ -30,14 +29,13 @@ grid-template-columns: 50% 50%;
     #f2f2f2,
     #ada996
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-attachment: fixed;
+  overflow: hidden;
   .banner-img {
-
-
-
     img {
-width: 135px;
-max-width: 180px
+      overflow: hidden;
+      width: 135px;
+      max-width: 180px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -49,12 +47,9 @@ max-width: 180px
     }
   }
   .banner-h1 {
-
-
     color: rgb(49, 47, 54);
-font-size: calc(12px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
     .banner-z {
-
       font-size: 2em;
 
       font-family: 'Ubuntu', sans-serif;
@@ -64,39 +59,32 @@ font-size: calc(12px + 0.5vw);
     max-width: 700px;
     display: flex;
     justify-content: space-between;
-padding-left: 200px;
+    padding-left: 170px;
     align-items: center;
-
-
-
-
   }
 
-  .aside{
+  .aside {
     line-height: 1.3em;
 
     text-align: center;
-display: flex;
+    display: flex;
     flex-direction: column;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 
-color: rgb(49, 47, 54);
-text-transform: uppercase;
+    color: rgb(49, 47, 54);
+    text-transform: uppercase;
   }
 
   @media only screen and (max-width: 800px) {
-display: block;
-.intro-top {
-  padding: 0;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-flex-direction: column-reverse;
-
-}
-
-
+    display: block;
+    .intro-top {
+      padding: 0;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
   }
 `;
 

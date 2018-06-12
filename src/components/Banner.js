@@ -16,7 +16,7 @@ const Banner = () => (
     </div>
 
     <div className="aside">
-      <p className="one animatedRight">Executive Producer</p>
+      <p className="one slideInRight">Executive Producer</p>
       <p className="two animatedLeft">Creartor</p>
       <p className="three animatedRight">Lider</p>
       <p className="four animatedLeft">Futurist</p>
