@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fab9 from '../../images/fab5.jpg';
+import Fab9 from '../../images/fab10.png';
 import ContactWrapper from '../containers/ContactWrapper';
 export default class Contact extends React.Component {
   render() {
@@ -8,7 +8,7 @@ export default class Contact extends React.Component {
       <ContactWrapper>
         <div className="profile-wrapper">
           <img className="profile" src={Fab9} alt="profile" />
-          <h5>Get In Touch</h5>
+
           <div className="social-nav2">
             <a href="https://www.facebook.com/Razielp123/">
               <span className="fab fa-facebook" />
@@ -25,8 +25,9 @@ export default class Contact extends React.Component {
             </a>
           </div>
         </div>
+
         <div className="bio-info">
-          <h4>Hi, I'm Raz</h4>
+          <h4>FabianZvon</h4>
           <p>
             I Love to chat and about the Multiverse
             <br />

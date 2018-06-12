@@ -5,12 +5,11 @@ const ContactWrapper = styled.div`
 
   text-align: center;
 
-  height: 100%;
-
   margin: 0 auto;
 
   .bio-info {
-    width: 100%;
+    max-width: 700;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,10 +57,10 @@ const ContactWrapper = styled.div`
     }
   }
   .profile {
-    padding-bottom: 50px;
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
+    width: 500px;
+    max-width: 600px;
+    padding-bottom: 40px;
+    filter: grayscale(100%);
   }
 
   @media only screen and (max-width: 800px) {
