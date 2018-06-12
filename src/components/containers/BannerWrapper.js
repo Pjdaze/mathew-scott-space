@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
+
 display: grid;
 align-items: center;
 justify-content: center;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 50% 50%;
   overflow: hidden;
   height: 95%;
-  ma
+  
   min-height: 95vh;
 
   font-family: 'Titillium Web', sans-serif;
@@ -32,10 +33,10 @@ grid-template-columns: repeat(3, 1fr);
 
   .banner-img {
 
-text-align: center;
+
 
     img {
-width: 140px;
+width: 135px;
 max-width: 180px
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
@@ -48,10 +49,10 @@ max-width: 180px
     }
   }
   .banner-h1 {
-padding-left: 180px;
+
 
     color: rgb(49, 47, 54);
-
+font-size: calc(12px + 0.5vw);
     .banner-z {
 
       font-size: 2em;
@@ -59,41 +60,42 @@ padding-left: 180px;
       font-family: 'Ubuntu', sans-serif;
     }
   }
+  .intro-top {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+padding-left: 200px;
+    align-items: center;
 
-  .intro-top{
-    border: 1px solid #222;
-color: rgb(49, 47, 54);
+
+
 
   }
 
-  @media only screen and (max-width: 767px) {
-padding: 40px;
-display: grid;
-grid-template-rows: auto auto;
-.banner-h1 {
-  grid-row-start: 1;
-  grid-column-start: 2;
+  .aside{
+    line-height: 1.3em;
 
-  padding: 0;
-}
-
-.banner-img {
-
-grid-column-start: 1;
-
-}
-
-.intro-top{
-  text-align: center;
+    text-align: center;
 display: flex;
-flex-direction: column;
+    flex-direction: column;
 justify-content: center;
 align-items: center;
-  grid-row-start: 2;
 
-    grid-column-start: span 3;
+color: rgb(49, 47, 54);
+text-transform: uppercase;
+  }
+
+  @media only screen and (max-width: 800px) {
+display: block;
+.intro-top {
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+flex-direction: column-reverse;
 
 }
+
 
   }
 `;
