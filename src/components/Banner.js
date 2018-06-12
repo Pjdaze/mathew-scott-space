@@ -4,8 +4,10 @@ import Fab8 from '../images/fab8.png';
 import Collage from '../images/collage1.jpg';
 const Banner = () => (
   <BannerWrapper>
-    <div className="banner-img">
-      <img src={Collage} alt="fabian1" />
+    <div className="banner-h1">
+      <h1>
+        FABIAN<span className="banner-z">Z</span>VON
+      </h1>
     </div>
     <div className="banner-img">
       <img src={Fab8} alt="fabian" />
