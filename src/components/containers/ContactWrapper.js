@@ -5,8 +5,6 @@ const ContactWrapper = styled.div`
 
   text-align: center;
 
-  margin: 0 auto;
-
   .bio-info {
     max-width: 700;
     padding: 40px 0;
@@ -57,14 +55,13 @@ const ContactWrapper = styled.div`
     align-items: center;
   }
   .profile {
-    width: 500px;
-    max-width: 600px;
-
+    width: 100%;
+    min-height: 100%;
     filter: grayscale(100%);
   }
 
   @media only screen and (max-width: 800px) {
-    display: block;
+    flex-direction: column;
 
     .bio-info {
       justify-content: flex-start;
