@@ -30,9 +30,6 @@ const ContactWrapper = styled.div`
       font-family: 'Titillium Web', sans-serif;
       line-height: 1.5em;
     }
-  }
-  .profile-wrapper {
-    align-items: center;
 
     .social-nav2 {
       width: 200px;
@@ -56,10 +53,13 @@ const ContactWrapper = styled.div`
       font-weight: 300;
     }
   }
+  .profile-wrapper {
+    align-items: center;
+  }
   .profile {
     width: 500px;
     max-width: 600px;
-    padding-bottom: 40px;
+
     filter: grayscale(100%);
   }
 

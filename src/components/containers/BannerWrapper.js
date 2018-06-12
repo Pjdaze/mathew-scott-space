@@ -29,7 +29,7 @@ const BannerWrapper = styled.div`
   .banner-img {
 
     img {
-width: 200px
+width: 180px
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);

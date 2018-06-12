@@ -8,22 +8,6 @@ export default class Contact extends React.Component {
       <ContactWrapper>
         <div className="profile-wrapper">
           <img className="profile" src={Fab9} alt="profile" />
-
-          <div className="social-nav2">
-            <a href="https://www.facebook.com/Razielp123/">
-              <span className="fab fa-facebook" />
-            </a>
-            <a href="#">
-              <span className="fab fa-twitter" />
-            </a>
-
-            <a href="#">
-              <span className="fab fa-instagram" />
-            </a>
-            <a href="mailto:razielp123@gmail.com">
-              <span className="fas fa-at" />
-            </a>
-          </div>
         </div>
 
         <div className="bio-info">
@@ -41,6 +25,21 @@ export default class Contact extends React.Component {
             <br />
             <br />
           </p>
+          <div className="social-nav2">
+            <a href="https://www.facebook.com/Razielp123/">
+              <span className="fab fa-facebook" />
+            </a>
+            <a href="#">
+              <span className="fab fa-twitter" />
+            </a>
+
+            <a href="#">
+              <span className="fab fa-instagram" />
+            </a>
+            <a href="mailto:razielp123@gmail.com">
+              <span className="fas fa-at" />
+            </a>
+          </div>
         </div>
       </ContactWrapper>
     );
