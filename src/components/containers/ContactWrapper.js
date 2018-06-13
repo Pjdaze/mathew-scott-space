@@ -56,7 +56,9 @@ const ContactWrapper = styled.div`
   }
   .profile {
     width: 100%;
-    min-height: 100%;
+    min-width: 450px;
+    height: 100%;
+    min-height: 550px;
     margin: 0;
     filter: grayscale(100%);
   }

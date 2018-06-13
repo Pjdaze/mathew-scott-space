@@ -8,21 +8,14 @@ const BannerWrapper = styled.div`
 
   padding-top: 100px;
 
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #9a8e8e,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d7dde8, #757f9a); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #9a8e8e,
-    #dbdbdb,
-    #f2f2f2,
-    #9a8e8e
+    to top,
+    #d7dde8,
+    #757f9a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -82,12 +75,15 @@ const BannerWrapper = styled.div`
   }
 
   .aside {
+    width: 95%;
+
     line-height: 1.3em;
 
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
 
     color: rgb(49, 47, 54);

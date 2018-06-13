@@ -1,49 +1,42 @@
 import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-
-  .intro-top {
-    p {
-      font-size: 1.5em;
-      line-height: 1.8em;
-      text-transform: uppercase;
-      animation-duration: 0.3s;
-    }
-  }
   .intro-bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 400px 400px;
+    h1 {
+      grid-column-start: 2;
+    }
+    img {
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .top-feed-img {
+      grid-row-start: 2;
+      display: flex;
+      grid-column-start: span 2;
+    }
+
+    .bottom-feed-img {
+      grid-row-start: 3;
+      display: flex;
+      grid-column-start: span 2;
+    }
     width: 95%;
-    max-width: 600px;
-    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+
     font-family: 'Exo 2', sans-serif;
     font-size: 300;
     line-height: 1.5em;
     font-weight: 300;
   }
-  .intro-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 300px;
-    margin: 0 auto;
-    width: 95%;
-    max-width: 700px;
-    img {
-      width: 400px;
-      height: 270px;
+  @media only screen and (min-width: 800px) {
+    .bottom-feed-img,
+    .top-feed-img {
     }
-  }
-
-  .two {
-    animation-delay: 0.8s;
-  }
-  .three {
-    animation-delay: 1.1s;
-  }
-  .four {
-    animation-delay: 1.3s;
   }
 `;
 

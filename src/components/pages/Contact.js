@@ -16,8 +16,10 @@ export default class Contact extends React.Component {
             I Love to chat and about the Multiverse
             <br />
             <br />
-            Leter i showed one of my paintings to a close friend who i admire as an artist, and to
-            hear him say he was blown away, got me insired to persue Art!
+            My name is Fabian Q, i'm awesome because i know Mother Monster I like to spend my free
+            time visualizing new ideas that i can apply to my daily work like and im loving every
+            moment so far i love Art, design music and moshrroms, i hate other cats and im in love
+            with showbiz lets see maybe one day.
             <br />
             <br />
             If i can get that kind of reaction from my peers, there is no telling what i can do with
