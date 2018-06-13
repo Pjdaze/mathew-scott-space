@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
   border-bottom: 1px solid #ccc;
-  background-color: #ddd;
+  background-color: #fff;
+
   .intro-top {
     p {
       font-size: 1.5em;
