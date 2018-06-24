@@ -1,6 +1,6 @@
 import React from 'react';
 import BannerWrapper from './containers/BannerWrapper';
-import Fab8 from '../images/fab8.png';
+import Fab8 from '../images/fab20.png';
 import Collage from '../images/collage1.jpg';
 const Banner = () => (
   <BannerWrapper>
