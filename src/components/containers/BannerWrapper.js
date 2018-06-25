@@ -8,12 +8,20 @@ const BannerWrapper = styled.div`
 
   padding-top: 100px;
 
-  background: #757f9a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #d7dde8, #757f9a); /* Chrome 10-25, Safari 5.1-6 */
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
-    #d7dde8,
-    #757f9a
+    to bottom,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   perspective: 1px;
@@ -88,6 +96,8 @@ const BannerWrapper = styled.div`
 
     color: rgb(49, 47, 54);
     text-transform: uppercase;
+  }
+  .story {
   }
 `;
 

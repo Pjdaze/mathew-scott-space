@@ -1,10 +1,5 @@
 import React from 'react';
-import FakeApi1 from '../images/fab10.png';
-import FakeApi2 from '../images/fab6.jpg';
-import FakeApi3 from '../images/fab4.jpg';
-import FakeApi4 from '../images/fab2.jpg';
 import IntroWrapper from './containers/IntroWrapper';
-import axios from 'axios';
 import Story from './Story';
 
 class Intro extends React.Component {
@@ -15,28 +10,30 @@ class Intro extends React.Component {
       feed: {}
     };
   }
+
   componentDidMount() {
-    const url =
-      'https://newsapi.org/v2/top-headlines?sources=buzzfeed&apiKey=baef82e953b84080b594b7dffb69286c';
-    axios.get(url).then(res => {
-      this.setState({
-        feed: [...res.data.articles]
+    fetch(
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token=323463912.813a6eb.b7123d8d9d904d3d921d84d6381b6d7c'
+    )
+      .then(response => {
+        return response.json();
+      })
+      .then(res => {
+        this.setState({
+          feed: [...res.data]
+        });
+        console.log(res);
       });
-      console.log(res.data);
-    });
   }
 
   render() {
     const { feed } = this.state;
 
-    console.log(feed);
-
     return (
-      <IntroWrapper className="flex-center">
-        <h1>{!feed.length ? 'Loading...' : feed.map((x, i) => <Story x={x} />)}</h1>
+      <IntroWrapper className="feed">
+        {!feed.length ? 'loading...' : feed.map(x => <Story x={x} />)}
       </IntroWrapper>
     );
   }
 }
-
 export default Intro;

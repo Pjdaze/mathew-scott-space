@@ -7,21 +7,23 @@ const IntroWrapper = styled.div`
   font-size: calc(5px + 0.2vw);
   margin: 0 auto;
   padding: 25px;
+  display: grid;
+  grid-template-columns: 380px 380px;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+
   .story {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 2.3em;
-    width: 90%;
     margin: 0 auto;
-    box-shadow: 0 0 10px #222;
     h1,
     p {
       width: 100%;
     }
     img {
-      width: 400px;
+      display: block;
+      max-width: 100%;
+      min-width: 380px;
+      height: 325px;
     }
   }
 `;
