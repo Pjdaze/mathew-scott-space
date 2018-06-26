@@ -7,23 +7,22 @@ const IntroWrapper = styled.div`
   font-size: calc(5px + 0.2vw);
   margin: 0 auto;
   padding: 25px;
-  display: grid;
-  grid-template-columns: 380px 380px;
-  grid-template-rows: auto auto;
-  justify-content: center;
-  align-items: center;
-
+  .feed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
   .story {
     margin: 0 auto;
+    border: 1px solid #222;
+    width: 200px;
     h1,
     p {
       width: 100%;
     }
     img {
       display: block;
-      max-width: 100%;
-      min-width: 380px;
-      height: 325px;
+      width: 100%;
     }
   }
 `;

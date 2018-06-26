@@ -10,15 +10,15 @@ const BannerWrapper = styled.div`
 
   background: #ada996; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
+    to right,
     #eaeaea,
     #dbdbdb,
     #f2f2f2,
     #ada996
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #eaeaea,
+    to right,
+    #ada996,
     #dbdbdb,
     #f2f2f2,
     #ada996
@@ -51,7 +51,7 @@ const BannerWrapper = styled.div`
   .banner-img {
     img {
       overflow: hidden;
-      width: 220px;
+      width: 500px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);

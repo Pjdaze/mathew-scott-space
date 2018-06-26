@@ -13,7 +13,7 @@ class Intro extends React.Component {
 
   componentDidMount() {
     fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token=323463912.813a6eb.b7123d8d9d904d3d921d84d6381b6d7c'
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token=323463912.813a6eb.b7123d8d9d904d3d921d84d6381b6d7c&count=4'
     )
       .then(response => {
         return response.json();
@@ -31,7 +31,7 @@ class Intro extends React.Component {
 
     return (
       <IntroWrapper className="feed">
-        {!feed.length ? 'loading...' : feed.map(x => <Story x={x} />)}
+        {!feed.length ? 'loading...' : <div className="feed">{feed.map(x => <Story x={x} />)}</div>}
       </IntroWrapper>
     );
   }
