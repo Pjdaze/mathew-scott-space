@@ -41,7 +41,7 @@ export default class Nav extends React.Component {
             <a href="https://www.instagram.com/fabianzvon/">
               <span className="fab fa-instagram" />
             </a>
-            <a href="mailto:razielp123@gmail.com">
+            <a href="mailto:pjdazeux@gmail.com">
               <span className="fas fa-at" />
             </a>
           </div>

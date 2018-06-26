@@ -9,13 +9,14 @@ const IntroWrapper = styled.div`
   padding: 25px;
   .feed {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    grid-template-columns: 200px 200px;
     grid-template-rows: auto auto;
   }
   .story {
     margin: 0 auto;
     border: 1px solid #222;
-    width: 200px;
+
     h1,
     p {
       width: 100%;

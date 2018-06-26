@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
+  position: relative;
   height: 100%;
   min-height: 100vh;
 
@@ -10,25 +11,22 @@ const BannerWrapper = styled.div`
 
   background: #ada996; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #eaeaea,
+    to bottom,
+    #f2f2f2,
     #dbdbdb,
     #f2f2f2,
     #ada996
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #ada996,
+    to bottom,
+    #fff,
     #dbdbdb,
     #f2f2f2,
     #ada996
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   background-attachment: fixed;
+
   .parallax {
     margin: 0 auto;
     width: 95%;
@@ -48,10 +46,22 @@ const BannerWrapper = styled.div`
       }
     }
   }
+  .bench {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    bottom: 25%;
+    width: 500px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
   .banner-img {
     img {
       overflow: hidden;
-      width: 500px;
+      width: 260px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);

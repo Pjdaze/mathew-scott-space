@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const NavWrapper = styled.nav`
 
 
+  z-index: 4;
+
   color: #222;
   width: 0;
   transition: all 0.2s ease-in-out;
@@ -21,7 +23,7 @@ transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
   }
   .menu-h1{
 
-
+   z-index: 3;
 font-weight: 600;
 font-size: calc(1.6em + 0.6vw);
 &:hover{
@@ -33,6 +35,7 @@ font-size: calc(1.6em + 0.6vw);
 
 
   li {
+    z-index: 4;
     display: block;
     font-family: 'Titillium Web', sans-serif;
 padding: 15px;
@@ -40,6 +43,7 @@ padding: 15px;
     color: #222;
 
     a {
+      z-index: 4;
 
       color: #222;
     }
@@ -88,6 +92,7 @@ padding: 0;
     width: 0px;
 
     ul {
+z-index: 7;
       display: flex;
 
       flex-direction: column;
@@ -95,7 +100,7 @@ padding: 0;
     }
     li {
 
-
+z-index: 8;
       font-size: 1.5em;
 text-transform: uppercase;
 
@@ -104,6 +109,7 @@ text-transform: uppercase;
 
 
       a {
+        z-index: 9;
   
 width: 100%;
 
@@ -142,7 +148,7 @@ width: 100%;
 
   .social-nav {
 margin: 45px  auto 0 auto;
-
+z-index: 10;
   width: 90%;
   max-width: 250px;
 
@@ -155,6 +161,7 @@ margin: 45px  auto 0 auto;
 
 
 .fa , .fab, .fas{
+  z-index: 20;
       transition: all 0.1s ease-in-out;
       color: #ccc;
        font-size: calc(20px + 0.5vw);

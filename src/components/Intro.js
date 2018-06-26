@@ -30,7 +30,7 @@ class Intro extends React.Component {
     const { feed } = this.state;
 
     return (
-      <IntroWrapper className="feed">
+      <IntroWrapper>
         {!feed.length ? 'loading...' : <div className="feed">{feed.map(x => <Story x={x} />)}</div>}
       </IntroWrapper>
     );
