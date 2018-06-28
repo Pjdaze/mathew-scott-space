@@ -31,6 +31,7 @@ class Intro extends React.Component {
 
     return (
       <IntroWrapper>
+        <h2>LATEST</h2>
         {!feed.length ? 'loading...' : <div className="feed">{feed.map(x => <Story x={x} />)}</div>}
       </IntroWrapper>
     );

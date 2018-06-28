@@ -4,26 +4,29 @@ const IntroWrapper = styled.div`
   width: 95%;
   max-width: 1200px;
   text-align: center;
-  font-size: calc(5px + 0.2vw);
+
   margin: 0 auto;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .feed {
     display: grid;
-    justify-content: end;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: auto auto;
+    grid-template-columns: minmax(150px, 200px) minmax(150px, 200px);
   }
   .story {
     margin: 0 auto;
-    border: 1px solid #222;
+    width: 90%;
+    max-width: 300px;
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
 
-    h1,
-    p {
-      width: 100%;
-    }
     img {
-      display: block;
       width: 100%;
+
+      margin: 0 0 6px 6px;
+      vertical-align: middle;
     }
   }
 `;

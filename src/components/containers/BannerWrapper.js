@@ -1,83 +1,51 @@
 import styled from 'styled-components';
-
+import Briks from '../../images/bricks.jpg';
+import Fab22 from '../../images/fab22.png';
 const BannerWrapper = styled.div`
-  position: relative;
   height: 100%;
   min-height: 100vh;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+  position: relative;
+  background: url(${Briks}) no-repeat scroll center top transparent;
 
+  background-attachment: fixed;
+
+  width: 100%; /* width of image */
   font-family: 'Titillium Web', sans-serif;
 
   padding-top: 100px;
 
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #f2f2f2,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #fff,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-attachment: fixed;
-
-  .parallax {
-    margin: 0 auto;
-    width: 95%;
-    max-width: 1500px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 50% 50%;
-    @media only screen and (max-width: 800px) {
-      display: block;
-      .intro-top {
-        padding: 0;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-      }
-    }
-  }
-  .bench {
-    position: absolute;
-    left: 50%;
-    margin-left: -240px;
-    bottom: 25%;
-    width: 500px;
-
-    img {
-      width: 100%;
-      display: block;
-    }
-  }
   .banner-img {
-    img {
-      overflow: hidden;
-      width: 260px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: 'FlipH';
-      -webkit-filter: drop-shadow(5px 5px 5px #222);
-      filter: drop-shadow(0px 6px 6px #777);
-      @media only screen and (max-width: 700px) {
-        width: 130px;
-      }
-    }
+    background: url(${Fab22}) 50% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+
+    left: 50%;
+    margin-left: -130px;
+    top: 43%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: 'FlipH';
   }
   .banner-h1 {
     color: rgb(49, 47, 54);
     font-size: calc(12px + 0.5vw);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+
     .banner-z {
       font-size: 2em;
 
@@ -94,7 +62,12 @@ const BannerWrapper = styled.div`
 
   .aside {
     width: 95%;
-
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: 'FlipH';
     line-height: 1.3em;
 
     margin: 0 auto;
