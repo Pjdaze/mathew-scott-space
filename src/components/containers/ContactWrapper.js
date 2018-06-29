@@ -61,6 +61,7 @@ const ContactWrapper = styled.div`
     min-height: 550px;
     margin: 0;
     filter: grayscale(100%);
+    box-shadow: ;
   }
 
   @media only screen and (max-width: 800px) {

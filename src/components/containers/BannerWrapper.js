@@ -1,50 +1,34 @@
 import styled from 'styled-components';
 import Briks from '../../images/bricks.jpg';
-import Fab22 from '../../images/fab22.png';
+import Bricks2 from '../../images/Bricks2.jpg';
+import Bricks3 from '../../images/bricks3.jpg';
+
 const BannerWrapper = styled.div`
-  height: 100%;
-  min-height: 100vh;
-  background-size: cover;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: 'FlipH';
   position: relative;
   background: url(${Briks}) no-repeat scroll center top transparent;
-
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  min-width: 250px;
+  height: 80vh;
+  max-height: 1000px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
 
-  width: 100%; /* width of image */
-  font-family: 'Titillium Web', sans-serif;
+  .banner-image {
+    position: absolute;
+    left: 30%;
+    margin-left: -30px;
 
-  padding-top: 100px;
-
-  .banner-img {
-    background: url(${Fab22}) 50% 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 400px;
-    position: fixed;
-
-    left: 50%;
-    margin-left: -130px;
-    top: 43%;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: 'FlipH';
+    img {
+      width: 250px;
+      height: 400px;
+    }
   }
   .banner-h1 {
     color: rgb(49, 47, 54);
     font-size: calc(12px + 0.5vw);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
 
     .banner-z {
       font-size: 2em;
@@ -62,10 +46,7 @@ const BannerWrapper = styled.div`
 
   .aside {
     width: 95%;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+
     filter: FlipH;
     -ms-filter: 'FlipH';
     line-height: 1.3em;
@@ -76,11 +57,9 @@ const BannerWrapper = styled.div`
     flex-direction: column;
 
     align-items: center;
-
+    font-size: 12px;
     color: rgb(49, 47, 54);
     text-transform: uppercase;
-  }
-  .story {
   }
 `;
 

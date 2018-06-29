@@ -12,6 +12,7 @@ class Home extends React.Component {
         <Banner />
 
         <Intro />
+        <div className="flex me" />
       </HomeWrapper>
     );
   }

@@ -22,6 +22,7 @@ transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 
   }
   .menu-h1{
+    text-align: center;
 
    z-index: 3;
 font-weight: 600;
