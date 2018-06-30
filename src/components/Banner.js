@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Fab22 from '../images/fab22.png';
+import Fab22 from '../images/gaga1.png';
 
 import { Parallax } from 'react-scroll-parallax';
 

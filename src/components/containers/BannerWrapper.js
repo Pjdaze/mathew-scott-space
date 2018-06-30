@@ -25,7 +25,7 @@ const BannerWrapper = styled.div`
     transform: scaleX(-1);
 
     img {
-      width: 250px;
+      width: 300px;
       height: 400px;
     }
   }
