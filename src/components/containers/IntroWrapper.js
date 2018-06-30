@@ -43,7 +43,6 @@ const IntroWrapper = styled.div`
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
         transform: translate(0px, -10px) scaleX(1.1);
         font-size: 0.9em;
-        zoom: 1;
 
         border-style: solid double;
       }
