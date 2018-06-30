@@ -4,22 +4,25 @@ import Bricks2 from '../../images/Bricks2.jpg';
 import Bricks3 from '../../images/bricks3.jpg';
 
 const BannerWrapper = styled.div`
-  position: relative;
   background: url(${Briks}) no-repeat scroll center top transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 250px;
+  background-position: center;
+
   height: 80vh;
-  max-height: 1000px;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
   clear: both;
 
   .banner-image {
     position: absolute;
-    left: 30%;
+    left: 35%;
+    top: 40%;
     margin-left: -30px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 
     img {
       width: 250px;
@@ -36,7 +39,7 @@ const BannerWrapper = styled.div`
       font-family: 'Ubuntu', sans-serif;
     }
   }
-  .intro-top {
+  .banner-top {
     max-width: 700px;
     display: flex;
     justify-content: space-between;
@@ -47,8 +50,6 @@ const BannerWrapper = styled.div`
   .aside {
     width: 95%;
 
-    filter: FlipH;
-    -ms-filter: 'FlipH';
     line-height: 1.3em;
 
     margin: 0 auto;

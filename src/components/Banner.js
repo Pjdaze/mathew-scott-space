@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Fab22 from '../images/fab22.png';
+
 import { Parallax } from 'react-scroll-parallax';
 
 import BannerWrapper from './containers/BannerWrapper';
@@ -8,7 +9,7 @@ const ParallaxImage = () => (
   <Parallax
     className="banner-image"
     offsetYMax={300}
-    offsetYMin={-80}
+    offsetYMin={-150}
     slowerScrollRate
     tag="figure"
   >
