@@ -1,22 +1,17 @@
 import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
-  padding: 150px 100px;
-  width: 95%;
-  background: #360033; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #0b8793,
-    #360033
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 60px;
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffe2f6;
 
-  margin: 0 auto;
-  height: 100vh;
-  overflow: hidden;
+  overflow: visible;
+  margin: 100px auto;
+
   text-align: center;
   display: flex;
-  justify-content: center;
+
   align-content: center;
 
   &::after {
@@ -25,29 +20,34 @@ const IntroWrapper = styled.div`
 
   .feed {
     display: grid;
-    grid-template-columns: 225px 225px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 200px 200px;
     grid-gap: 6px 6px;
+    justify-content: center;
+
+    padding: 30px;
   }
 
   .latest-h2 {
-    font-family: 'Oswald', sans-serif;
+    flex: 1;
+
+    font-family: 'Zooja', sans-serif;
+
     text-transform: uppercase;
 
     font-size: calc(2em + 1.5vw);
-    flex: 1;
-    margin-left: -1;
+
     color: #fff;
   }
   .story {
     margin: 0 auto;
 
-    width: 225px;
+    width: 180px;
     video {
       transition: all ease-in-out 175ms;
       width: 100%;
 
-      height: 250px;
+      height: 200px;
 
       &:hover {
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
@@ -60,8 +60,8 @@ const IntroWrapper = styled.div`
 
     img {
       width: 100%;
-      height: 250px;
-
+      height: 200px;
+      border-radius: 1px;
       vertical-align: middle;
 
       transition: all ease-in-out 175ms;

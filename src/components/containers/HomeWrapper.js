@@ -4,8 +4,10 @@ const HomeWrapper = styled.div`
   min-height: 100%;
   overflow: hidden;
   position: relative;
+  background-color: #f9f9f9;
 
   .me {
+    margin: 200px auto 200px auto;
     display: flex;
 
     flex-direction: column;

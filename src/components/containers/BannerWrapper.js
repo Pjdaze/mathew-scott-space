@@ -24,8 +24,9 @@ const BannerWrapper = styled.div`
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 
+    filter: saturate(1.5);
     img {
-      width: 300px;
+      width: 180px;
       height: 400px;
     }
   }

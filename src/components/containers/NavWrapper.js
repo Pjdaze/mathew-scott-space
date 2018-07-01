@@ -4,10 +4,10 @@ const NavWrapper = styled.nav`
 
 
   z-index: 4;
-
+  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0s;
   color: #222;
   width: 0;
-  transition: all 0.2s ease-in-out;
+
 background-color: #000;
 opacity: 0.96;
   .logox {
@@ -17,7 +17,8 @@ opacity: 0.96;
   &.open {
     width: 100vw;
 
-transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+transition: all  cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+
         
 
   }
