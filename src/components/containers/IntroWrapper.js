@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
-  padding: 150px 100px 150px 0;
+  padding: 150px 100px;
+  width: 95%;
+  background: #360033; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0b8793,
+    #360033
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0 auto;
   height: 100vh;
   overflow: hidden;
   text-align: center;
   display: flex;
   justify-content: center;
   align-content: center;
-  background-size: cover;
 
   &::after {
     filter: blur(2px);
@@ -22,12 +31,13 @@ const IntroWrapper = styled.div`
   }
 
   .latest-h2 {
-    font-family: 'Titillium Web', sans-serif;
-    text-shadow: 2px 2px 1px #777;
-    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
     font-size: calc(2em + 1.5vw);
     flex: 1;
     margin-left: -1;
+    color: #fff;
   }
   .story {
     margin: 0 auto;
@@ -65,6 +75,12 @@ const IntroWrapper = styled.div`
         border-style: solid double;
       }
     }
+  }
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

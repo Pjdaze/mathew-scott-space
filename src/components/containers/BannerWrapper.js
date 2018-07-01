@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Briks from '../../images/bricks.jpg';
+import Bricks1 from '../../images/bricks.jpg';
 import Bricks2 from '../../images/Bricks2.jpg';
 import Bricks3 from '../../images/bricks3.jpg';
 
 const BannerWrapper = styled.div`
-  background: url(${Briks}) no-repeat scroll center top transparent;
+  background: url(${Bricks1}) no-repeat scroll center top transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

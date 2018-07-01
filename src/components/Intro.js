@@ -13,7 +13,7 @@ class Intro extends React.Component {
 
   componentDidMount() {
     fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token=323463912.813a6eb.b7123d8d9d904d3d921d84d6381b6d7c&count=4'
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token=13132063.4e71cbd.23b5e548ad6646999cad4803bb8f938a&count=4'
     )
       .then(response => {
         return response.json();
