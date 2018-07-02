@@ -39,7 +39,7 @@ const HomeWrapper = styled.div`
 
     background-attachment: fixed;
   }
-  @media only screen and (min-width) {
+  @media only screen and (min-width: 700px) {
     .me {
       background-size: auto;
     }

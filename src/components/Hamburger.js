@@ -11,7 +11,7 @@ const Hamburger = styled.div`
     position: fixed;
     top: 30px;
     right: 35px;
-    z-index: 10;
+    z-index: 1200;
   }
 
   width: 100%;

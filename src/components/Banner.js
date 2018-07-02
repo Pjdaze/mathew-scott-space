@@ -5,7 +5,7 @@ import Fab22 from '../images/fab8.png';
 import { Parallax } from 'react-scroll-parallax';
 
 import BannerWrapper from './containers/BannerWrapper';
-const ParallaxImage = () => (
+const ParallaxImage = props => (
   <Parallax
     className="banner-image"
     offsetYMax={300}
