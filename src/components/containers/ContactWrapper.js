@@ -71,5 +71,8 @@ const ContactWrapper = styled.div`
       justify-content: flex-start;
     }
   }
+  .facebook-link:hover:before {
+    background-color: blue;
+  }
 `;
 export default ContactWrapper;

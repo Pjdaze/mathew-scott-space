@@ -88,7 +88,11 @@ const Hamburger = styled.div`
     left: 50%;
   }
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 800px) {
+    .line-wrap {
+      right: 100px;
+      top: 35px;
+    }
   }
 `;
 

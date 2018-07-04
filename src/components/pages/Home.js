@@ -5,6 +5,7 @@ import Banner from '../Banner';
 
 import Intro from '../Intro';
 import { Parallax } from 'react-scroll-parallax';
+import SocialWrapper from '../containers/SocialWapper';
 const ParallaxImage2 = props => (
   <Parallax
     className="banner-image"
@@ -27,6 +28,7 @@ class Home extends React.Component {
         <Parallax>
           <div className="flex me" />
         </Parallax>
+        <SocialWrapper>Hello</SocialWrapper>
       </HomeWrapper>
     );
   }

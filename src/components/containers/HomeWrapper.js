@@ -4,7 +4,7 @@ const HomeWrapper = styled.div`
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #fff;
 
   .me {
     margin: 200px auto 200px auto;
@@ -29,19 +29,16 @@ const HomeWrapper = styled.div`
     z-index: 5;
     opacity: 0.8;
     background-image: url(${Fab23});
-    background-repeat: no-repeat;
-    background-position: center;
-    -ms-background-size: contain;
-    -o-background-size: contain;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
     background-size: contain;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     background-attachment: fixed;
-  }
-  @media only screen and (min-width: 700px) {
-    .me {
-      background-size: auto;
+    @media only screen and (max-width: 700px) {
+      background-size: contain;
+      width: 400px;
+      height: 400px;
     }
   }
 `;

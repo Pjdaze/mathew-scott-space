@@ -18,7 +18,7 @@ const BannerWrapper = styled.div`
 
   .banner-image {
     position: absolute;
-    left: 35%;
+    left: 30%;
     top: 40%;
     margin-left: -30px;
     -webkit-transform: scaleX(-1);
@@ -27,10 +27,12 @@ const BannerWrapper = styled.div`
     filter: saturate(1.5);
     img {
       width: 180px;
-      height: 400px;
+      height: 450px;
     }
   }
   .banner-h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
     color: rgb(49, 47, 54);
     font-size: calc(12px + 0.5vw);
 
@@ -43,14 +45,22 @@ const BannerWrapper = styled.div`
   .banner-top {
     max-width: 700px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+
     padding-left: 170px;
     align-items: center;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 0;
+      right: 4%;
+    }
   }
 
   .aside {
-    width: 95%;
-
     line-height: 1.3em;
 
     margin: 0 auto;

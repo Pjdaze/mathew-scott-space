@@ -28,7 +28,7 @@ export default class Contact extends React.Component {
             <br />
           </p>
           <div className="social-nav2">
-            <a href="https://www.facebook.com/Razielp123/">
+            <a className="facebook-link" href="https://www.facebook.com/Razielp123/">
               <span className="fab fa-facebook" />
             </a>
             <a href="#">

@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400|Open+Sans:300,300i,400,400i,600|Roboto:100i,300,400|Pacifico|Titillium+Web:300,400,600|Allerta+Stencil|Oswald:100,300,600,400|Exo+2:400,500,800|Archivo:400,700|Ubuntu:400,700');
+@font-face {
+  font-family: 'Ostrich';
+  src: url('./fonts/knewave-outline.ttf') format('woff2');
+
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400|Titillium+Web:300,400,600|Oswald:100,300,600,400|Exo+2:400,500,800|Archivo:400,700|Ubuntu:400,700');
 /************************
           Classes
 *************************/

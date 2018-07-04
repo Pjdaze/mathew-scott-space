@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
   padding: 60px;
-  width: 100%;
+  width: 95%;
   max-width: 900px;
-  background-color: #ffe2f6;
+  background: #fff; /* fallback for old browsers */
 
-  overflow: visible;
   margin: 100px auto;
 
   text-align: center;
@@ -29,15 +28,27 @@ const IntroWrapper = styled.div`
   }
 
   .latest-h2 {
+    padding: 15px;
     flex: 1;
 
-    font-family: 'Zooja', sans-serif;
+    background: #b24592; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f15f79,
+      #b24592
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f15f79,
+      #b24592
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    font-family: 'Ostrich', sans-serif;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-
-    font-size: calc(2em + 1.5vw);
-
-    color: #fff;
+    font-size: calc(1.5em + 0.5vw);
   }
   .story {
     margin: 0 auto;
@@ -53,8 +64,6 @@ const IntroWrapper = styled.div`
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
         transform: translate(0px, -10px) scaleX(1.1);
         font-size: 0.9em;
-
-        border-style: solid double;
       }
     }
 
@@ -71,8 +80,6 @@ const IntroWrapper = styled.div`
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
         transform: translate(0px, -20px) scaleX(1.2);
         font-size: 0.9em;
-
-        border-style: solid double;
       }
     }
   }

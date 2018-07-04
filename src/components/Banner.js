@@ -23,22 +23,22 @@ class Banner extends React.Component {
   render() {
     return (
       <BannerWrapper>
-        <div className="intro-top">
-          <div className="banner-h1">
+        <div className="banner-top">
+          <div className="animated rubberBand banner-h1">
             <h1>
               FABIAN<span className="banner-z">Z</span>VON
             </h1>
+          </div>
+          <div className="aside">
+            <p className="animated one slideInRight">Executive Producer</p>
+            <p className="animated two slideInLeft">Creartor</p>
+
+            <p className="animated four slideInLeft">Futurist</p>
           </div>
         </div>
         <Parallax>
           <ParallaxImage />
         </Parallax>
-        <div className="aside">
-          <p className="one slideInRight">Executive Producer</p>
-          <p className="two animatedLeft">Creartor</p>
-
-          <p className="four animatedLeft">Futurist</p>
-        </div>
       </BannerWrapper>
     );
   }
