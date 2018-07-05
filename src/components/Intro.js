@@ -16,9 +16,7 @@ class Intro extends React.Component {
       'https://api.instagram.com/v1/users/self/media/recent/?access_token=13132063.4e71cbd.23b5e548ad6646999cad4803bb8f938a&count=4';
 
     fetch(url)
-      .then(response => {
-        return response.json();
-      })
+      .then(turnMe => turnMe.json())
       .then(res => {
         this.setState({
           feed: [...res.data]

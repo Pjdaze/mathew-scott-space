@@ -6,8 +6,7 @@ import Bricks3 from '../../images/bricks3.jpg';
 const BannerWrapper = styled.div`
   background: url(${Bricks1}) no-repeat scroll center top transparent;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
   background-position: center;
 
   height: 80vh;

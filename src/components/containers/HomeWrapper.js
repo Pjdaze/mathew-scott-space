@@ -15,12 +15,9 @@ const HomeWrapper = styled.div`
 
     height: 100vh;
     position: relative;
-    background: #fff;
-    overflow: hidden;
-  }
 
-  .me:before {
-    content: ' ';
+    overflow: hidden;
+     content: ' ';
     display: block;
     border-radius: 50%;
 
@@ -32,7 +29,6 @@ const HomeWrapper = styled.div`
     background-size: contain;
     background-position: center 0px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 
     background-attachment: fixed;
     @media only screen and (max-width: 700px) {
@@ -40,7 +36,7 @@ const HomeWrapper = styled.div`
       width: 400px;
       height: 400px;
     }
-  }
+
 `;
 
 export default HomeWrapper;
