@@ -8,17 +8,17 @@ const BannerWrapper = styled.div`
   background-size: cover;
 
   background-position: center;
-
-  height: 80vh;
-  min-height: 500px;
+  height: 85vh;
+  max-height: 600px;
   position: relative;
   overflow: hidden;
   clear: both;
 
   .banner-image {
     position: absolute;
+    top: 250px;
     left: 30%;
-    top: 40%;
+
     margin-left: -30px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);

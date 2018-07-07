@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 const ContactWrapper = styled.div`
   display: flex;
-
+  height: 100%;
   text-align: center;
 
   .bio-info {
-    max-width: 700;
+    max-width: 700px;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
@@ -55,24 +55,30 @@ const ContactWrapper = styled.div`
     align-items: center;
   }
   .profile {
-    width: 100%;
-    min-width: 450px;
+    width: 450px;
+
     height: 100%;
     min-height: 550px;
     margin: 0;
     filter: grayscale(100%);
-    box-shadow: ;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 795px) {
     flex-direction: column;
+    .profile-wrapper {
+      height: 730px;
+    }
+    .profile {
+      width: 100%;
+
+      height: 100%;
+      min-height: 550px;
+      margin: 0;
+    }
 
     .bio-info {
       justify-content: flex-start;
     }
-  }
-  .facebook-link:hover:before {
-    background-color: blue;
   }
 `;
 export default ContactWrapper;

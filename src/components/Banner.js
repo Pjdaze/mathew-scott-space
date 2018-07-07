@@ -6,13 +6,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 import BannerWrapper from './containers/BannerWrapper';
 const ParallaxImage = props => (
-  <Parallax
-    className="banner-image"
-    offsetYMax={300}
-    offsetYMin={-150}
-    slowerScrollRate
-    tag="figure"
-  >
+  <Parallax className="banner-image" offsetYMax={20} offsetYMin={-20} slowerScrollRate tag="figure">
     <img src={Fab22} />
   </Parallax>
 );
