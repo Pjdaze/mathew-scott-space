@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const ContactWrapper = styled.div`
   display: flex;
   height: 100%;
+
   text-align: center;
 
   .bio-info {
-    max-width: 700px;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ const ContactWrapper = styled.div`
     align-items: center;
   }
   .profile {
-    width: 450px;
+    width: 600px;
 
     height: 100%;
     min-height: 550px;

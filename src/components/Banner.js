@@ -12,8 +12,6 @@ const ParallaxImage = props => (
 );
 
 class Banner extends React.Component {
-  componentDidMount() {}
-
   render() {
     return (
       <BannerWrapper>

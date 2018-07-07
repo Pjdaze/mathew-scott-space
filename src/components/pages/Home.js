@@ -3,9 +3,10 @@ import Fab23 from '../../images/fab23.png';
 import HomeWrapper from '../containers/HomeWrapper';
 import Banner from '../Banner';
 
-import Intro from '../Intro';
+import Latest from '../Latest';
 import { Parallax } from 'react-scroll-parallax';
 import SocialWrapper from '../containers/SocialWapper';
+import Intro from '../Intro';
 const ParallaxImage2 = props => (
   <Parallax
     className="banner-image"
@@ -23,8 +24,8 @@ class Home extends React.Component {
     return (
       <HomeWrapper>
         <Banner />
-
         <Intro />
+        <Latest />
         <Parallax>
           <div className="flex me" />
         </Parallax>
