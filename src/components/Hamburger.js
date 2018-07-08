@@ -20,7 +20,7 @@ const Hamburger = styled.div`
   height: 0;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 1000;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
