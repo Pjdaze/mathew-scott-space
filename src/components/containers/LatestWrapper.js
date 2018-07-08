@@ -31,22 +31,8 @@ const LatestWrapper = styled.div`
     padding: 15px;
     flex: 1;
 
-    background: #b24592; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #f15f79,
-      #b24592
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #f15f79,
-      #b24592
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     font-family: 'Ostrich', sans-serif;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-size: calc(1.5em + 0.5vw);
   }

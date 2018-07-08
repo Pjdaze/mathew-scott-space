@@ -17,7 +17,7 @@ const HomeWrapper = styled.div`
     position: relative;
 
     overflow: hidden;
-     content: ' ';
+
     display: block;
     border-radius: 50%;
 
