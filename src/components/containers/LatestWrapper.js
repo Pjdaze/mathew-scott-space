@@ -46,10 +46,35 @@ const LatestWrapper = styled.div`
       height: 200px;
 
       &:hover {
-        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
-        transform: translate(0px, -10px) scaleX(1.1);
         font-size: 0.9em;
       }
+    }
+
+    .link {
+      position: relative;
+
+      .caption {
+        position: absolute;
+
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Exo 2', sans-serif;
+        left: 0px;
+        height: 200px;
+        background-color: #000;
+        opacity: 0;
+        p {
+          margin-top: 40%;
+        }
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          opacity: 0.9;
+          height: 200px;
+        }
+      }
+
+      transition: all 135ms ease-in-out;
     }
 
     img {
@@ -62,8 +87,6 @@ const LatestWrapper = styled.div`
       cursor: pointer;
 
       &:hover {
-        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.5);
-        transform: translate(0px, -20px) scaleX(1.2);
         font-size: 0.9em;
       }
     }

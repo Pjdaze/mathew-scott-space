@@ -104,7 +104,7 @@ const StarsWrapper = styled.div`
     right: 0;
     left: 0;
     width: 100%;
-    z-index: 100000;
+    z-index: 4;
   }
 `;
 
