@@ -1,7 +1,7 @@
 import React from 'react';
 import IntroWrapper from './containers/IntroWrapper';
 import StarsWrapper from './containers/StarsWrapper';
-
+import Latest from './Latest';
 import { Parallax } from 'react-scroll-parallax';
 
 const ParallaxStars = props => (
@@ -17,6 +17,10 @@ const Intro = props => {
   return (
     <IntroWrapper>
       <StarsWrapper>
+        <div className="latest">
+          <Latest />
+        </div>
+        <h1>Hello</h1>
         <div className="stars" />
         <div className="twinkling" />
         <div className="clouds" />

@@ -99,6 +99,13 @@ const StarsWrapper = styled.div`
     -webkit-animation: move-twink-back 200s linear infinite;
     animation: move-twink-back 500s linear infinite;
   }
+  .latest {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+  }
 `;
 
 export default StarsWrapper;

@@ -4,7 +4,7 @@ const LatestWrapper = styled.div`
   padding: 60px;
   width: 95%;
   max-width: 900px;
-  background: #fff; /* fallback for old browsers */
+  background: transparent; /* fallback for old browsers */
 
   margin: 100px auto;
 
@@ -32,7 +32,7 @@ const LatestWrapper = styled.div`
     flex: 1;
 
     font-family: 'Ostrich', sans-serif;
-
+    color: #fff;
     text-transform: uppercase;
     font-size: calc(1.5em + 0.5vw);
   }

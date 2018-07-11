@@ -2,8 +2,6 @@ import React from 'react';
 import Fab23 from '../../images/fab23.png';
 import HomeWrapper from '../containers/HomeWrapper';
 import Banner from '../Banner';
-
-import Latest from '../Latest';
 import { Parallax } from 'react-scroll-parallax';
 import SocialWrapper from '../containers/SocialWapper';
 import Intro from '../Intro';
@@ -25,10 +23,9 @@ class Home extends React.Component {
       <HomeWrapper>
         <Banner />
         <Intro />
-        <Latest />
-        <Parallax>
-          <div className="flex me" />
-        </Parallax>
+
+        <div className="flex me" />
+
         <SocialWrapper>Hello</SocialWrapper>
       </HomeWrapper>
     );

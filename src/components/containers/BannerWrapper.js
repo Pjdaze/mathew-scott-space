@@ -10,6 +10,7 @@ const BannerWrapper = styled.div`
   background-position: center;
   height: 85vh;
   max-height: 600px;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
   clear: both;

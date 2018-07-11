@@ -24,7 +24,7 @@ const HomeWrapper = styled.div`
     width: 600px;
     height: 600px;
     z-index: 5;
-    opacity: 0.8;
+
     background-image: url(${Fab23});
     background-size: contain;
     background-position: center 0px;
