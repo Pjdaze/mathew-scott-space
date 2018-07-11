@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const LatestWrapper = styled.div`
-  padding: 60px;
   width: 95%;
   max-width: 900px;
   background: transparent; /* fallback for old browsers */
@@ -74,6 +73,12 @@ const LatestWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .messages {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
   }
 `;
 

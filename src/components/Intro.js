@@ -20,7 +20,7 @@ const Intro = props => {
         <div className="latest">
           <Latest />
         </div>
-        <h1>Hello</h1>
+
         <div className="stars" />
         <div className="twinkling" />
         <div className="clouds" />
