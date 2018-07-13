@@ -1,33 +1,35 @@
 import styled from 'styled-components';
 import Bricks1 from '../../images/bricks.jpg';
 import Bricks2 from '../../images/Bricks2.jpg';
-import Bricks3 from '../../images/bricks3.jpg';
+import Rainbow from '../../images/Rainbow1.png';
 
 const BannerWrapper = styled.div`
-  background: url(${Bricks1}) no-repeat scroll center top transparent;
+  background: url(${Rainbow}) no-repeat scroll center top transparent;
   background-size: cover;
+  background-attachment: fixed;
 
-  background-position: center;
-  height: 85vh;
-  max-height: 600px;
-  min-height: 500px;
+  transform: scale(1.1, 1.1);
+  background-position: center 70px;
+  height: 100vh;
+
+  min-height: 600px;
   position: relative;
   overflow: hidden;
   clear: both;
 
   .banner-image {
     position: absolute;
-    top: 250px;
+    top: 300px;
     left: 30%;
-
+    overflow: hidden;
     margin-left: -30px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 
     filter: saturate(1.5);
     img {
       width: 180px;
       height: 450px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
     }
   }
   .banner-h1 {
@@ -47,8 +49,9 @@ const BannerWrapper = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25%;
+    top: 15%;
     right: 20%;
+    font-family: 'Exo 2', sans-serif;
 
     padding-left: 170px;
     align-items: center;
@@ -56,7 +59,7 @@ const BannerWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       padding-left: 0;
-      right: 4%;
+      right: 10%;
     }
   }
 

@@ -29,12 +29,17 @@ class Latest extends React.Component {
     const { feed } = this.state;
 
     return (
-      <LatestWrapper className="latest">
-        <div className="latest-h2">
+      <div className="latest">
+        <LatestWrapper>
           <h2>Latest</h2>
-        </div>
-        {!feed.length ? 'loading...' : <div className="feed">{feed.map(x => <Story x={x} />)}</div>}
-      </LatestWrapper>
+          <div className="latest-h2" />
+          {!feed.length ? (
+            'loading...'
+          ) : (
+            <div className="feed">{feed.map(x => <Story x={x} />)}</div>
+          )}
+        </LatestWrapper>
+      </div>
     );
   }
 }

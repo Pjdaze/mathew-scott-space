@@ -5,7 +5,13 @@ const HomeWrapper = styled.div`
   overflow: hidden;
   position: relative;
   background-color: #fff;
+.latest {
 
+overflow: hidden;
+height: 100vh;
+width: 100%;
+
+}
   .me {
     margin: 200px auto 200px auto;
     display: flex;
