@@ -4,15 +4,21 @@ import Bricks2 from '../../images/Bricks2.jpg';
 import Rainbow from '../../images/Rainbow1.png';
 
 const BannerWrapper = styled.div`
-  background: url(${Rainbow}) no-repeat scroll center top transparent;
+  background: url(${Rainbow}) no-repeat scroll transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
   background-attachment: fixed;
 
   transform: scale(1.1, 1.1);
   background-position: center 70px;
-  height: 100vh;
+  height: 90vh;
 
-  min-height: 600px;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
   clear: both;
@@ -75,6 +81,10 @@ const BannerWrapper = styled.div`
     font-size: 12px;
     color: rgb(49, 47, 54);
     text-transform: uppercase;
+  }
+
+  @media only screen and (max-width: 785px) {
+    background-size: 100% 100vh;
   }
 `;
 

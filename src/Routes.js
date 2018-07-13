@@ -11,7 +11,7 @@ import Work from './components/pages/Work';
 const Routes = props => (
   <Switch>
     <ScrollToTopRoute path="/" exact component={Home} />
-    <ScrollToTopRoute path="/Home" component={Home} />
+    <ScrollToTopRoute path="/Home" exact component={Home} />
     <ScrollToTopRoute path="/Work" component={Work} />
     <ScrollToTopRoute path="/Contact" component={Contact} />
   </Switch>
