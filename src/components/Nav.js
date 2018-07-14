@@ -8,7 +8,7 @@ export default class Nav extends React.Component {
     const NavClass = isOpen ? 'open' : 'nav1';
     return (
       <NavWrapper className={NavClass}>
-        <ul>
+        <ul className={NavClass}>
           <li>
             <div className="logox">
               <NavLink activeClassName="activex" to="/Home">

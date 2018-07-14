@@ -10,7 +10,8 @@ const NavWrapper = styled.nav`
     width: 0px;
 
   z-index: 5;
-  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0.2s;
+
   color: #222;
   width: 0;
 height: 100vh;
@@ -93,9 +94,24 @@ padding: 0;
 
     ul {
 
-  padding-top: 2em;
 
-      min-height: 500px;
+visibility: hidden;
+transition: opacity 0.7s ease-in, visibility 0.5s, margin 0.4s ease-in-out;
+transition-delay: 0.1s;
+height: 0;
+opacity: 0;
+height: 0;
+padding-top: 6em;
+margin-top: -100px;
+      &.open {
+        padding-top: 2em;
+        opacity: 1;
+        visibility: visible;
+margin-top: 0;
+height: 100vh;
+
+     
+      }
     }
     li {
 
