@@ -19,6 +19,7 @@ const BannerWrapper = styled.div`
   height: 100vh;
 
   min-height: 500px;
+  max-height: 685px;
   position: relative;
   overflow: hidden;
   clear: both;
@@ -36,6 +37,9 @@ const BannerWrapper = styled.div`
       height: 450px;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
+    }
+    @media only screen and (max-height: 415px) {
+      top: 100px;
     }
   }
   .banner-h1 {
