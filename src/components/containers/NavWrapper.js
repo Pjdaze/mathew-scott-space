@@ -2,18 +2,21 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
 
+    position: fixed;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    width: 0px;
 
   z-index: 5;
   transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0s;
   color: #222;
   width: 0;
-
+height: 100vh;
 background-color: #000;
 opacity: 0.96;
-  .logox {
-    margin-left: auto;
-  
-  }
+
   &.open {
     width: 100vw;
 
@@ -40,7 +43,7 @@ font-size: calc(1.6em + 0.6vw);
     z-index: 100;
     display: block;
     font-family: 'Titillium Web', sans-serif;
-padding: 15px;
+
     font-weight: 300;
     color: #222;
 
@@ -86,28 +89,22 @@ padding: 0;
 }
 
 
-    position: fixed;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 0px;
+
 
     ul {
 
-      display: flex;
+  padding-top: 2em;
 
-      flex-direction: column;
-      height: 100vh;
+      min-height: 500px;
     }
     li {
 
-
+padding: 30px;
       font-size: 1.5em;
 text-transform: uppercase;
 
       text-align: center;
-      margin-top: 28px;
+
 
 
       a {

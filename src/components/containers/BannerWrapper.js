@@ -16,7 +16,7 @@ const BannerWrapper = styled.div`
 
   transform: scale(1.1, 1.1);
   background-position: center 70px;
-  height: 80vh;
+  height: 100vh;
 
   min-height: 500px;
   position: relative;
@@ -78,7 +78,7 @@ const BannerWrapper = styled.div`
     flex-direction: column;
 
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(49, 47, 54);
     text-transform: uppercase;
   }
