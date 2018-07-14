@@ -16,7 +16,7 @@ const BannerWrapper = styled.div`
 
   transform: scale(1.1, 1.1);
   background-position: center 70px;
-  height: 90vh;
+  height: 80vh;
 
   min-height: 500px;
   position: relative;
@@ -27,7 +27,7 @@ const BannerWrapper = styled.div`
     position: absolute;
     top: 300px;
     left: 30%;
-    overflow: hidden;
+
     margin-left: -30px;
 
     filter: saturate(1.5);
@@ -55,8 +55,8 @@ const BannerWrapper = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 15%;
-    right: 20%;
+    top: 11%;
+    right: 10%;
     font-family: 'Exo 2', sans-serif;
 
     padding-left: 170px;

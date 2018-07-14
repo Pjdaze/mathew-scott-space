@@ -7,9 +7,13 @@ const HomeWrapper = styled.div`
   background-color: #fff;
 .latest {
 
-overflow: hidden;
+
+
 height: 100vh;
+  min-height: 500px;
 width: 100%;
+
+
 
 }
   .me {
