@@ -15,7 +15,7 @@ const BannerWrapper = styled.div`
   background-attachment: fixed;
 
   transform: scale(1.1, 1.1);
-  background-position: center 70px;
+
   height: 100vh;
 
   min-height: 500px;

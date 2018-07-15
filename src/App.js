@@ -15,6 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <MainLayout>
+
         <Menu />
         <Header />
         <Routes />
