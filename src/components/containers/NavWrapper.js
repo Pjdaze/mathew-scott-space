@@ -10,13 +10,13 @@ const NavWrapper = styled.nav`
     width: 0px;
 
   z-index: 5;
-  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0.2s;
+  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0.1s;
 
-  color: #222;
+  color: #fff;
   width: 0;
 height: 100vh;
 background-color: #000;
-opacity: 0.96;
+
 
   &.open {
     width: 100vw;
@@ -96,15 +96,15 @@ padding: 0;
 
 
 visibility: hidden;
-transition: opacity 0.7s ease-in, visibility 0.5s, margin 0.4s ease-in-out;
+transition: opacity 0.3s ease-in, visibility 0.3s, margin 0.2s ease-in;
 transition-delay: 0.1s;
 height: 0;
 opacity: 0;
 height: 0;
-padding-top: 6em;
-margin-top: -100px;
+padding-top: 2em;
+margin-top: -50px;
       &.open {
-        padding-top: 2em;
+
         opacity: 1;
         visibility: visible;
 margin-top: 0;
@@ -178,7 +178,7 @@ z-index: 200;
 .fa , .fab, .fas{
   z-index: 20;
       transition: all 0.1s ease-in-out;
-      color: #ccc;
+      color: #fff;
        font-size: calc(20px + 0.5vw);
        padding: 8px;
       &:hover {
