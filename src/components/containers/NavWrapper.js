@@ -10,20 +10,22 @@ const NavWrapper = styled.nav`
     width: 0px;
 
   z-index: 5;
-  transition: all 0.3s cubic-bezier(0.6, 2, 0.23, 1) 0.1s;
-
-  color: #fff;
-  width: 0;
-height: 100vh;
-background-color: #000;
 
 
+  color: #333;
+width: 100%;
+
+background-color: #fff;
+visibility: hidden;
+transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+opacity: 0.1;
   &.open {
-    width: 100vw;
 
-transition: all  cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+transition: opacity 0.2s ease-in-out, visibility 0.1s ease-in-out;
+visibility: visible;
+opacity: 1;
 
-        
+
 
   }
   .menu-h1{
@@ -32,8 +34,9 @@ transition: all  cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
    z-index: 100;
 font-weight: 600;
 font-size: calc(1.6em + 0.6vw);
-&:hover{
-        color: #fff;
+&:hover {
+        color: #222;
+
 
       transition: all 135ms ease-in-out;
 }
@@ -90,24 +93,21 @@ padding: 0;
 }
 
 
-
-
-    ul {
-
-
+ ul {
 visibility: hidden;
-transition: opacity 0.3s ease-in, visibility 0.3s, margin 0.2s ease-in;
-transition-delay: 0.1s;
+transition: all ease-in-out;
 height: 0;
 opacity: 0;
-height: 0;
-padding-top: 2em;
-margin-top: -50px;
-      &.open {
 
+
+padding-top: 2em;
+
+
+      &.open {
+        transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
         opacity: 1;
         visibility: visible;
-margin-top: 0;
+
 height: 100vh;
 
      
@@ -129,13 +129,26 @@ text-transform: uppercase;
 width: 100%;
 
 
-        color: #fff;
+        color: #444;
         font-family: 'Oswald', sans-serif;
          padding: 40px;
         text-transform: uppercase;
+        letter-spacing: 8em;
+        zoom: 0.1;
         &:hover{
 
         }
+        &.open {
+        transition: opacity 0.5s ease-in-out, letter-spacing 0.4s ease-in-out, zoom 0.3s linear;
+        opacity: 1;
+        visibility: visible;
+        letter-spacing: 0.3em;
+        zoom: 0;
+
+height: 100vh;
+
+     
+      }
       }
 
       &:nth-child(3) {
@@ -158,8 +171,15 @@ width: 100%;
         zoom: 1;
       }
     }
+    @keyframes mymove {
+    from {zoom: -10%;}
+    to {zoom: 0%;}
+}
+
+/* Standard syntax */
+
   }
-  //end of query
+
 
   .social-nav {
 margin: 45px  auto 0 auto;
@@ -178,7 +198,7 @@ z-index: 200;
 .fa , .fab, .fas{
   z-index: 20;
       transition: all 0.1s ease-in-out;
-      color: #fff;
+      color: #444;
        font-size: calc(20px + 0.5vw);
        padding: 8px;
       &:hover {

@@ -10,8 +10,8 @@ export default class Nav extends React.Component {
       <NavWrapper className={NavClass}>
         <ul className={NavClass}>
           <li>
-            <div className="logox">
-              <NavLink activeClassName="activex" to="/Home">
+            <div className={(NavClass && 'logox') || 'Open'}>
+              <NavLink className={NavClass} activeClassName="activex" to="/Home">
                 <h1 className="menu-h1">
                   Fabian<span className="z">Z</span>von
                 </h1>
@@ -20,12 +20,17 @@ export default class Nav extends React.Component {
           </li>
 
           <li>
-            <NavLink onUpdate={() => window.scrollTo(0, 0)} activeClassName="activex" to="/MyDay">
+            <NavLink
+              className={NavClass}
+              onUpdate={() => window.scrollTo(0, 0)}
+              activeClassName="activex"
+              to="/MyDay"
+            >
               Work
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activex" to="/Contact">
+            <NavLink className={NavClass} activeClassName="activex" to="/Contact">
               Contact
             </NavLink>
           </li>

@@ -21,15 +21,6 @@ const Hamburger = styled.div`
   top: 0;
   right: 0;
   z-index: 1000;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
 
   .line {
     position: absolute;
@@ -46,46 +37,60 @@ const Hamburger = styled.div`
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: 0.1s ease-in-out;
-    -moz-transition: 0.1s ease-in-out;
-    -o-transition: 0.1s ease-in-out;
-    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
     z-index: 50;
     &:nth-child(1) {
       top: 0px;
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      -o-transform-origin: right center;
+      transform-origin: right center;
     }
 
     &:nth-child(2) {
       top: 8px;
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      -o-transform-origin: right center;
+      transform-origin: right center;
     }
     &:nth-child(3) {
       top: 16px;
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      -o-transform-origin: right center;
+      transform-origin: right center;
     }
   }
 
   &.menuActive .line:nth-child(1) {
-    top: 18px;
-    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -3px;
+    left: 8px;
+    background-color: #222;
   }
 
   &.menuActive .line:nth-child(2) {
+    width: 0%;
     opacity: 0;
-    left: -60px;
-    background-color: #fff;
+    background-color: #222;
   }
 
   &.menuActive .line:nth-child(3) {
-    top: 18px;
-    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: #fff;
-  }
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 
-  &.menuActive .line:nth-child(4) {
-    background-color: #fff;
-    top: 18px;
-    width: 0%;
-    left: 50%;
+    left: 8px;
+    background-color: #222;
   }
 
   @media only screen and (min-width: 800px) {
