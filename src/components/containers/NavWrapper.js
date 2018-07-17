@@ -6,7 +6,7 @@ const NavWrapper = styled.nav`
     right: 0;
     margin: 0;
     padding: 0;
-    overflow-x: scroll;
+    overflow: scroll;
     width: 0px;
 
   z-index: 5;
@@ -15,9 +15,16 @@ const NavWrapper = styled.nav`
   color: #222;
 width: 100%;
 
-background-color: #fff;
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
 visibility: hidden;
-transition: opacity 0.4s ease-in-out, visibility 0.2s ease-in-out;
+transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
 opacity: 0.1;
   &.open {
 
@@ -78,10 +85,12 @@ padding: 0;
       &:hover {
         text-shadow: 0 0 50px #fff;
       }
+      
     }
 
     &:nth-child(3) {
       margin-left: 20px;
+      
     }
 
     &:nth-child(4) {
