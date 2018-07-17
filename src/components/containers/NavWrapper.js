@@ -12,16 +12,16 @@ const NavWrapper = styled.nav`
   z-index: 5;
 
 
-  color: #333;
+  color: #222;
 width: 100%;
 
 background-color: #fff;
 visibility: hidden;
-transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+transition: opacity 0.4s ease-in-out, visibility 0.2s ease-in-out;
 opacity: 0.1;
   &.open {
 
-transition: opacity 0.2s ease-in-out, visibility 0.1s ease-in-out;
+
 visibility: visible;
 opacity: 1;
 
@@ -95,8 +95,8 @@ padding: 0;
 
  ul {
 visibility: hidden;
-transition: all ease-in-out;
-height: 0;
+transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+height: 100vh;
 opacity: 0;
 
 
@@ -104,11 +104,11 @@ padding-top: 2em;
 
 
       &.open {
-        transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+      
         opacity: 1;
         visibility: visible;
 
-height: 100vh;
+
 
      
       }
@@ -134,16 +134,16 @@ width: 100%;
          padding: 40px;
         text-transform: uppercase;
         letter-spacing: 8em;
-        zoom: 0.1;
+        transition: opacity 0.5s ease-in-out, letter-spacing 0.3s linear, zoom 0.9s linear;
         &:hover{
 
         }
         &.open {
-        transition: opacity 0.5s ease-in-out, letter-spacing 0.4s ease-in-out, zoom 0.3s linear;
+     
         opacity: 1;
         visibility: visible;
-        letter-spacing: 0.3em;
-        zoom: 0;
+        letter-spacing: 0.1em;
+
 
 height: 100vh;
 
@@ -171,10 +171,7 @@ height: 100vh;
         zoom: 1;
       }
     }
-    @keyframes mymove {
-    from {zoom: -10%;}
-    to {zoom: 0%;}
-}
+
 
 /* Standard syntax */
 
@@ -182,6 +179,8 @@ height: 100vh;
 
 
   .social-nav {
+
+height: 40%;
 margin: 45px  auto 0 auto;
 z-index: 10;
   width: 90%;
@@ -194,6 +193,8 @@ z-index: 200;
      align-items: center;
      text-align: center;
 
+     
+
 
 .fa , .fab, .fas{
   z-index: 20;
@@ -202,7 +203,7 @@ z-index: 200;
        font-size: calc(20px + 0.5vw);
        padding: 8px;
       &:hover {
-        color: #fff;
+        color: #ccc;
         font-weight: bold;
       }
     }

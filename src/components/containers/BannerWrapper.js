@@ -13,7 +13,7 @@ const BannerWrapper = styled.div`
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   background-attachment: fixed;
-
+  background-position: center bottom;
   transform: scale(1.1, 1.1);
 
   height: 100vh;
