@@ -13,7 +13,7 @@ const BannerWrapper = styled.div`
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   background-attachment: fixed;
-  background-position: center bottom;
+
   transform: scale(1.1, 1.1);
 
   height: 100vh;
@@ -62,14 +62,14 @@ const BannerWrapper = styled.div`
     top: 11%;
     right: 10%;
     font-family: 'Exo 2', sans-serif;
-
+    text-shadow: 1px 1px #fff;
     padding-left: 170px;
     align-items: center;
     @media only screen and (max-width: 500px) {
       flex-direction: column;
       justify-content: center;
       padding-left: 0;
-      right: 10%;
+      top: 8%;
     }
   }
 
@@ -82,7 +82,7 @@ const BannerWrapper = styled.div`
     flex-direction: column;
 
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(49, 47, 54);
     text-transform: uppercase;
   }

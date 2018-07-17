@@ -31,7 +31,7 @@ const LatestWrapper = styled.div`
     flex: 1;
 
     font-family: 'Ostrich', sans-serif;
-    color: #fff;
+    color: #222;
     text-transform: uppercase;
     font-size: calc(1.5em + 0.5vw);
   }

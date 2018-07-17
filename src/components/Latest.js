@@ -31,8 +31,9 @@ class Latest extends React.Component {
     return (
       <div className="latest">
         <LatestWrapper>
-          <h2>Latest</h2>
-          <div className="latest-h2" />
+          <div className="latest-h2">
+            <h2>Latest</h2>
+          </div>
           {!feed.length ? (
             'fucking shit sucks...'
           ) : (
