@@ -17,7 +17,7 @@ width: 100%;
 
 background: #ECE9E6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom, #FFFFFF, #f1f1f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -85,12 +85,12 @@ padding: 0;
       &:hover {
         text-shadow: 0 0 50px #fff;
       }
-      
+
     }
 
     &:nth-child(3) {
       margin-left: 20px;
-      
+
     }
 
     &:nth-child(4) {
@@ -113,13 +113,13 @@ padding-top: 2em;
 
 
       &.open {
-      
+
         opacity: 1;
         visibility: visible;
 
 
 
-     
+
       }
     }
     li {
@@ -134,11 +134,11 @@ text-transform: uppercase;
 
       a {
         z-index: 200;
-  
+
 width: 100%;
 
 
-        color: #444;
+        color: #333;
         font-family: 'Oswald', sans-serif;
          padding: 40px;
         text-transform: uppercase;
@@ -148,7 +148,7 @@ width: 100%;
 
         }
         &.open {
-     
+
         opacity: 1;
         visibility: visible;
         letter-spacing: 0.1em;
@@ -156,7 +156,7 @@ width: 100%;
 
 height: 100vh;
 
-     
+
       }
       }
 
@@ -167,7 +167,7 @@ height: 100vh;
       }
       &:nth-child(2) {
         zoom: 1;
-        
+
       }
       &:last-child {
         zoom: 1;
@@ -202,7 +202,7 @@ z-index: 200;
      align-items: center;
      text-align: center;
 
-     
+
 
 
 .fa , .fab, .fas{

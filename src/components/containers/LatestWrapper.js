@@ -33,7 +33,7 @@ const LatestWrapper = styled.div`
     font-family: 'Ostrich', sans-serif;
     color: #222;
     text-transform: uppercase;
-    font-size: calc(1.5em + 0.5vw);
+    font-size: calc(1.9em + 0.5vw);
   }
   .story {
     margin: 0 auto;
@@ -45,7 +45,7 @@ const LatestWrapper = styled.div`
 
       height: 200px;
 
-      &:hover {
+      &:hover &:focus {
         font-size: 0.9em;
       }
     }
@@ -63,6 +63,7 @@ const LatestWrapper = styled.div`
         height: 200px;
         background-color: #000;
         opacity: 0;
+        width: 100%;
         p {
           margin-top: 40%;
         }

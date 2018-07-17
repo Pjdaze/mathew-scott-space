@@ -19,7 +19,7 @@ class Latest extends React.Component {
       .then(resp => resp.json())
       .then(res => {
         this.setState({
-          feed: [...res]
+          feed: [...res.data]
         });
         console.log(res);
       });

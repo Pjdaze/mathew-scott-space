@@ -11,7 +11,18 @@ const Story = ({ x }) => {
           </span>
         </a>
       ) : (
-        <video width={100 + '%'} src={x.videos.standard_resolution.url} controls />
+        <a key="video-link" href={x.link} className="link">
+          <video
+            width={100 + '%'}
+            src={x.videos.standard_resolution.url}
+            controls
+            autoPlay="true"
+            muted="true"
+          />
+          <span className="caption">
+            <p>{x.caption.text}</p>
+          </span>
+        </a>
       )}
     </div>
   );
