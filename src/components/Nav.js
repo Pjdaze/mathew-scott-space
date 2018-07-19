@@ -5,7 +5,7 @@ export default class Nav extends React.Component {
   render() {
     const { isOpen } = this.props;
     console.log('Nav is open', isOpen);
-    const NavClass = isOpen ? 'open' : 'nav1';
+    const NavClass = isOpen ? 'open' : 'nav';
     return (
       <NavWrapper className={NavClass}>
         <ul className={NavClass}>

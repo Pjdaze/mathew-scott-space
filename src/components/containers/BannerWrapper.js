@@ -13,7 +13,7 @@ const BannerWrapper = styled.div`
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   background-attachment: fixed;
-
+  background-position-y: 125px;
   transform: scale(1.1, 1.1);
 
   height: 100vh;
@@ -26,7 +26,7 @@ const BannerWrapper = styled.div`
 
   .banner-image {
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 30%;
 
     margin-left: -30px;
@@ -38,20 +38,18 @@ const BannerWrapper = styled.div`
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
     }
-    @media only screen and (max-height: 415px) {
-      top: 100px;
+    @media only screen and (max-height: 580px) {
+      top: 35%;
     }
   }
   .banner-h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     color: rgb(49, 47, 54);
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(20px + 0.5vw);
 
     .banner-z {
       font-size: 2em;
-
-      font-family: 'Ubuntu', sans-serif;
     }
   }
   .banner-top {
@@ -60,7 +58,7 @@ const BannerWrapper = styled.div`
     flex-direction: column;
     position: absolute;
     top: 11%;
-    right: 10%;
+    right: 15%;
     font-family: 'Exo 2', sans-serif;
     text-shadow: 1px 1px #fff;
     padding-left: 170px;
@@ -74,15 +72,15 @@ const BannerWrapper = styled.div`
   }
 
   .aside {
-    line-height: 1.3em;
+    line-height: 1.4em;
 
-    margin: 0 auto;
+    margin: -25px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(49, 47, 54);
     text-transform: uppercase;
   }

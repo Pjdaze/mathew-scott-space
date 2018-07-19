@@ -15,6 +15,10 @@ const LatestWrapper = styled.div`
   &::after {
     filter: blur(2px);
   }
+  .insta-fab {
+    width: 500px;
+    height: 500px;
+  }
 
   .feed {
     display: grid;

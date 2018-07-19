@@ -6,8 +6,11 @@ const NavWrapper = styled.nav`
     right: 0;
     margin: 0;
     padding: 0;
-    overflow: scroll;
-    width: 0px;
+height: 100vh;
+    @media only screen and (max-height: 590px){
+height: 100%;
+overflow: auto;
+    }
 
   z-index: 5;
 
@@ -15,16 +18,14 @@ const NavWrapper = styled.nav`
   color: #222;
 width: 100%;
 
-background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFFFFF, #f1f1f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: #111;
 
 
 
 
 
 visibility: hidden;
-transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 opacity: 0.1;
   &.open {
 
@@ -35,19 +36,31 @@ opacity: 1;
 
 
   }
+
+.logox {
+
+width: 100%;
+
+
   .menu-h1{
-    text-align: center;
+
 
    z-index: 100;
 font-weight: 600;
 font-size: calc(1.6em + 0.6vw);
 &:hover {
-        color: #222;
+        color: #fff;
 
 
       transition: all 135ms ease-in-out;
 }
+@media only screen and (max-width: 360px){
+  margin: 0 20% 0 0;
 }
+
+}
+}
+
 
 
   li {
@@ -56,12 +69,12 @@ font-size: calc(1.6em + 0.6vw);
     font-family: 'Titillium Web', sans-serif;
 
     font-weight: 300;
-    color: #222;
+    color: #fff;
 
     a {
       z-index: 100;
 
-      color: #222;
+      color: #fff;
     }
     &.activex {
       color: #fcfaea;
@@ -111,7 +124,10 @@ opacity: 0;
 
 padding-top: 2em;
 
+@media only screen and (max-width: 480px){
+  height: 100%;
 
+}
       &.open {
 
         opacity: 1;
@@ -138,12 +154,12 @@ text-transform: uppercase;
 width: 100%;
 
 
-        color: #333;
+        color: #FFF;
         font-family: 'Oswald', sans-serif;
          padding: 40px;
         text-transform: uppercase;
         letter-spacing: 8em;
-        transition: opacity 0.5s ease-in-out, letter-spacing 0.3s linear, zoom 0.9s linear;
+        transition: opacity 0.5s ease-in-out, letter-spacing 0.3s ease-in-out;
         &:hover{
 
         }
@@ -188,13 +204,13 @@ height: 100vh;
 
 
   .social-nav {
-
+transition: visibility 0.2s ease-in-out, line-height 0.3s linear;
 height: 40%;
-margin: 45px  auto 0 auto;
+margin: -35px auto;
 z-index: 10;
   width: 90%;
   max-width: 250px;
-
+line-height: -50px;
 z-index: 200;
 
      display: flex;
@@ -202,24 +218,33 @@ z-index: 200;
      align-items: center;
      text-align: center;
 
+&.open {
 
+  line-height: 1em;
+  text-shadow: 1px 1px #ccc;
+
+
+}
 
 
 .fa , .fab, .fas{
   z-index: 20;
       transition: all 0.1s ease-in-out;
-      color: #444;
+      color: #fff;
        font-size: calc(20px + 0.5vw);
        padding: 8px;
       &:hover {
-        color: #ccc;
+        color: #eee;
         font-weight: bold;
+transform: scale(1.2);
       }
     }
 
 
 
   }
+
+
 `;
 
 export default NavWrapper;

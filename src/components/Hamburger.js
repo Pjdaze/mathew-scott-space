@@ -6,33 +6,32 @@ import Route from '../Routes';
 
 const Hamburger = styled.div`
   .line-wrap {
-    width: 25px;
+    width: 30px;
     height: 20px;
     position: fixed;
     top: 30px;
-    right: 35px;
+    right: 40px;
     z-index: 1200;
+
+    padding: 25px;
+    cursor: pointer;
   }
 
-  width: 100%;
-
-  position: fixed;
-  height: 0;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-
   .line {
+    -moz-box-shadow: inset 0 0 10px #fff;
+    -webkit-box-shadow: inset 0 0 2px #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 4px;
     position: absolute;
     display: block;
-
-    height: 3px;
-    width: 100%;
+    margin-left: 11px;
+    margin-top: 10px;
+    height: 4px;
+    width: 25px;
     background: #222;
-
     opacity: 1;
     left: 0;
-    box-shadow: -1px 1px 2px #222;
+
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -71,15 +70,15 @@ const Hamburger = styled.div`
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: -3px;
+    top: -2px;
     left: 8px;
-    background-color: #222;
+    background-color: #fff;
   }
 
   &.menuActive .line:nth-child(2) {
     width: 0%;
     opacity: 0;
-    background-color: #222;
+    background-color: #fff;
   }
 
   &.menuActive .line:nth-child(3) {
@@ -90,7 +89,7 @@ const Hamburger = styled.div`
     transform: rotate(45deg);
 
     left: 8px;
-    background-color: #222;
+    background-color: #fff;
   }
 
   @media only screen and (min-width: 800px) {

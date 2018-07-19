@@ -33,19 +33,8 @@ width: 100%;
 
     width: 600px;
     height: 600px;
-    z-index: 5;
+    z-index: 2;
 
-    background-image: url(${Fab23});
-    background-size: contain;
-    background-position: center 0px;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-    @media only screen and (max-width: 700px) {
-      background-size: contain;
-      width: 400px;
-      height: 400px;
-    }
 
 `;
 
