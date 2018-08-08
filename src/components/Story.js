@@ -2,7 +2,7 @@ import React from 'react';
 
 const Story = ({ x }) => {
   return (
-    <div className="story">
+    <div key="item.latest" className="story">
       {!x.videos ? (
         <a key="link" href={x.link} className="link">
           <img src={x.images.standard_resolution.url} />
@@ -19,7 +19,8 @@ const Story = ({ x }) => {
             autoPlay="true"
             muted="true"
           />
-          <span className="caption">
+
+          <span key="item.caption" className="caption">
             <p>{x.caption.text}</p>
           </span>
         </a>

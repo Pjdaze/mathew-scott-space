@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 const LatestWrapper = styled.div`
-  width: 95%;
-  max-width: 900px;
-  background: transparent; /* fallback for old browsers */
+  /* fallback for old browsers */
+  width: 97%;
 
-  margin: 100px auto;
+  background: linear-gradient(to right, #c2dde6 0%, #c2dde6 50%, #bccbde 50%, #c2dde6 100%);
+
+  margin: 150px auto;
 
   text-align: center;
   display: flex;
@@ -25,17 +26,19 @@ const LatestWrapper = styled.div`
     grid-template-columns: 180px 180px;
     grid-template-rows: 200px 200px;
     grid-gap: 6px 6px;
-    justify-content: center;
-
+    margin: 0 auto;
     padding: 30px;
+    background-color: #bccbde;
   }
 
   .latest-h2 {
+    //transform: skewY(-15deg);
     padding: 15px;
     flex: 1;
 
     font-family: 'Ostrich', sans-serif;
-    color: #222;
+
+    color: #fff;
     text-transform: uppercase;
     font-size: calc(1.9em + 0.5vw);
   }
@@ -107,6 +110,21 @@ const LatestWrapper = styled.div`
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
+  }
+  .newAdd {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: calc(12px + 0.4vw);
+    color: #fff;
+    font-weight: 300;
+    padding: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ul {
+      text-align: center;
+      padding: 15px;
+    }
   }
 `;
 

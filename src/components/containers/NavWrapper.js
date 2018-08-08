@@ -18,7 +18,8 @@ overflow: auto;
   color: #222;
 width: 100%;
 
-background-color: #111;
+
+background-color: #7FDBFF;
 
 
 
@@ -39,23 +40,24 @@ opacity: 1;
 
 .logox {
 
-width: 100%;
+
 
 
   .menu-h1{
-
+    width: 100%;
 
    z-index: 100;
 font-weight: 600;
-font-size: calc(1.6em + 0.6vw);
+
 &:hover {
         color: #fff;
 
 
       transition: all 135ms ease-in-out;
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 380px){
   margin: 0 20% 0 0;
+  padding: 0;
 }
 
 }

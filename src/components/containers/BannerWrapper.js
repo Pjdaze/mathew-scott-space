@@ -5,6 +5,7 @@ import Rainbow from '../../images/Rainbow1.png';
 
 const BannerWrapper = styled.div`
   background: url(${Rainbow}) no-repeat scroll transparent;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

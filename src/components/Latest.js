@@ -16,10 +16,13 @@ class Latest extends React.Component {
   componentDidMount() {
     const url =
       'https://api.instagram.com/v1/users/self/media/recent/?access_token=13132063.4e71cbd.23b5e548ad6646999cad4803bb8f938a&count=4';
+
     axios.get(url).then(res => {
       this.setState({
         feed: [...res.data.data]
       });
+
+      console.log(res.data);
     });
   }
 
@@ -31,11 +34,27 @@ class Latest extends React.Component {
         <LatestWrapper>
           <div className="latest-h2">
             <h2>Latest</h2>
+            {!feed.length ? (
+              `I'm Always Up To A Great Adventure...
+                             ____________________
+                         more dates comming soon
+              `
+            ) : (
+              <div key="item.new" className="newAdd">
+                {feed.map((item, i) => (
+                  <span>
+                    {item.location.name}
+                    <br />
+                    {item.created_time}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
           {!feed.length ? (
             <img src={InstaFab} className="insta-fab" alt="instagram fabian" />
           ) : (
-            <div className="feed">{feed.map(x => <Story x={x} />)}</div>
+            <div className="feed">{feed.map(x => <Story key={x.story} x={x} />)}</div>
           )}
         </LatestWrapper>
       </div>
