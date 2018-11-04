@@ -32,7 +32,7 @@ width: 100%;
     border-radius: 50%;
 
     width: 600px;
-    height: 600px;
+    height: 600px
     z-index: 2;
 
 

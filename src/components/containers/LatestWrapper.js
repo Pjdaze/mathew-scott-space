@@ -4,14 +4,9 @@ const LatestWrapper = styled.div`
   /* fallback for old browsers */
   width: 97%;
 
-  background: linear-gradient(to right, #c2dde6 0%, #c2dde6 50%, #bccbde 50%, #c2dde6 100%);
-
-  margin: 150px auto;
+  margin: 100px auto;
 
   text-align: center;
-  display: flex;
-
-  align-content: center;
 
   &::after {
     filter: blur(2px);
@@ -23,12 +18,11 @@ const LatestWrapper = styled.div`
 
   .feed {
     display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 180px 180px 180px 180px;
+    grid-template-rows: 200px 200px 200px 200px;
     grid-gap: 6px 6px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #bccbde;
+
+    justify-content: center;
   }
 
   .latest-h2 {
@@ -38,7 +32,7 @@ const LatestWrapper = styled.div`
 
     font-family: 'Ostrich', sans-serif;
 
-    color: #fff;
+    color: #222;
     text-transform: uppercase;
     font-size: calc(1.9em + 0.5vw);
   }

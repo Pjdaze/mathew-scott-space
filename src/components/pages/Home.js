@@ -25,11 +25,7 @@ class Home extends React.Component {
         <Banner />
         <Latest />
 
-        <div className="flex me">
-          <h3>Me...</h3>
-        </div>
-
-        <SocialWrapper>Hello</SocialWrapper>
+        <div className="flex me" />
       </HomeWrapper>
     );
   }

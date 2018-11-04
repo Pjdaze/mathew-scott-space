@@ -21,7 +21,7 @@ const Story = ({ x }) => {
           />
 
           <span key="item.caption" className="caption">
-            <p>{x.caption.text}</p>
+            <p className="upper">{x.caption.text}</p>
           </span>
         </a>
       )}
