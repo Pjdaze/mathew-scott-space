@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import Briks from '../../images/bricks.jpg';
+
 const LatestWrapper = styled.div`
   /* fallback for old browsers */
   width: 97%;
-
+  background-image: url(${Briks});
   margin: 50px auto;
 
   text-align: center;
@@ -103,21 +105,6 @@ const LatestWrapper = styled.div`
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
-  }
-  .newAdd {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: calc(12px + 0.4vw);
-    color: #fff;
-    font-weight: 300;
-    padding: 35px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    ul {
-      text-align: center;
-      padding: 15px;
-    }
   }
 `;
 

@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import Fender from '../../images/fenders1.jpg';
+import Fender2 from '../../images/fenders2.jpg';
+import Fender3 from '../../images/fenders3.jpg';
 
 const NavWrapper = styled.nav`
 
@@ -19,7 +22,10 @@ overflow: auto;
 width: 100%;
 
 
-background-color: #222;
+background: url(${Fender3});
+background-repeat: no-repeat;
+background-size: 100%;
+
 
 
 

@@ -15,7 +15,7 @@ class Latest extends React.Component {
 
   componentDidMount() {
     const url =
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token=13132063.4e71cbd.23b5e548ad6646999cad4803bb8f938a&count=20';
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token=13132063.4e71cbd.23b5e548ad6646999cad4803bb8f938a&count=12';
 
     axios.get(url).then(res => {
       this.setState({
