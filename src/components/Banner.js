@@ -18,7 +18,7 @@ class Banner extends React.Component {
         <div className="banner-top">
           <div className="animated rubberBand banner-h1">
             <h1>
-              Mathew<span className="banner-z">S</span>cott
+              Matthew<span className="banner-z">S</span>cott
             </h1>
           </div>
           <div className="aside">

@@ -13,7 +13,7 @@ export default class Nav extends React.Component {
             <div className={(NavClass && 'logox') || 'Open'}>
               <NavLink className={NavClass} activeClassName="activex" to="/Home">
                 <h1 className="menu-h1">
-                  Mathew<span className="z">S</span>cott
+                  Matthew<span className="z">S</span>cott
                 </h1>
               </NavLink>
             </div>

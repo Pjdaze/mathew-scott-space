@@ -22,14 +22,19 @@ overflow: auto;
 width: 100%;
 
 
-background: url(${Fender3});
+background: url(${Fender2});
 background-repeat: no-repeat;
-background-size: 100%;
+background-attachment: fixed;
+background-size: cover;
 
 
 
 
-
+@media only screen and (max-width: 800px){
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 visibility: hidden;
 transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;

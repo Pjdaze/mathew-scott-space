@@ -11,13 +11,13 @@ export default class Contact extends React.Component {
         </div>
 
         <div className="bio-info">
-          <h4>Mathew Scott</h4>
+          <h4>Matthew Scott</h4>
           <p>
             Musician / Band
             <br />
             <br />
-            Hey There My name Is Mathew and I'm A Guitar Player From Edmond who loves the blues blah
-            blah. Some of my influences include: Stevie Ray Vaughan, The Black Keys, The Black
+            Hey There My name Is Matthew and I'm A Guitar Player From Edmond who loves the blues
+            blah blah. Some of my influences include: Stevie Ray Vaughan, The Black Keys, The Black
             Crowes, Lynyrd Skynyrd
             <br />
             <br />
