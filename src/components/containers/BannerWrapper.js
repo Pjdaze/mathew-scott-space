@@ -35,8 +35,7 @@ const BannerWrapper = styled.div`
     img {
       width: 500px;
       height: 450px;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
+
     }
     @media only screen and (max-height: 580px) {
       top: 35%;

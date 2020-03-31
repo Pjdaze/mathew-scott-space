@@ -4,7 +4,7 @@ const LatestWrapper = styled.div`
   /* fallback for old browsers */
   width: 97%;
 
-  margin: 100px auto;
+  margin: 50px auto;
 
   text-align: center;
 
@@ -26,7 +26,6 @@ const LatestWrapper = styled.div`
   }
 
   .latest-h2 {
-    //transform: skewY(-15deg);
     padding: 15px;
     flex: 1;
 

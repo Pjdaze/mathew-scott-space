@@ -33,27 +33,19 @@ class Latest extends React.Component {
       <div className="latest">
         <LatestWrapper>
           <div className="latest-h2">
-            <h2>I'm Always Up For Some Fun</h2>
-
-            {!feed.length ? (
-              `I'm Always Up To A Great Adventure...
-                             ____________________
-                         more dates comming soon
-              `
-            ) : (
-              <div key="item.new" className="newAdd">
-                {feed.map((item, i) => (
-                  <span>
-                    <br />
-                  </span>
-                ))}
-              </div>
-            )}
+            <h2>
+              This Below Could Be Your Instagram, using another which i have Auth from to show you
+              example...
+            </h2>
           </div>
           {!feed.length ? (
             <img src={InstaFab} className="insta-fab" alt="instagram fabian" />
           ) : (
-            <div className="feed">{feed.map(x => <Story key={x.story} x={x} />)}</div>
+            <div className="feed">
+              {feed.map(x => (
+                <Story key={x.story} x={x} />
+              ))}
+            </div>
           )}
         </LatestWrapper>
       </div>
