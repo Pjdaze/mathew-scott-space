@@ -13,7 +13,7 @@ export default class Nav extends React.Component {
             <div className={(NavClass && 'logox') || 'Open'}>
               <NavLink className={NavClass} activeClassName="activex" to="/Home">
                 <h1 className="menu-h1">
-                  Fabian<span className="z">Z</span>von
+                  Mathew<span className="z">S</span>cott
                 </h1>
               </NavLink>
             </div>
@@ -26,7 +26,7 @@ export default class Nav extends React.Component {
               activeClassName="activex"
               to="/MyDay"
             >
-              Work
+              Upcoming Gigs
             </NavLink>
           </li>
           <li>
@@ -36,18 +36,22 @@ export default class Nav extends React.Component {
           </li>
 
           <div className="social-nav">
-            <a href="https://www.facebook.com/fabian.quinonez.35">
+            <a href="https://www.facebook.com/matthewscottmusic">
               <span className="fab fa-facebook" />
             </a>
-            <a href="https://twitter.com/FabianZvon">
-              <span className="fab fa-twitter" />
-            </a>
 
-            <a href="https://www.instagram.com/fabianzvon/">
+            <a href="https://www.instagram.com/matthewscott92/?hl=en">
               <span className="fab fa-instagram" />
             </a>
-            <a href="mailto:quinonezfabian@yahoo.com">
+
+            <a href="https://www.youtube.com/matthewscottmusic">
+              <span className="fab fa-youtube" />
+            </a>
+            <a href="mailto:57fenderstrat60@gmail.com">
               <span className="fas fa-at" />
+            </a>
+            <a href="https://twitter.com/matthewscott92">
+              <span className="fab fa-twitter" />
             </a>
           </div>
         </ul>

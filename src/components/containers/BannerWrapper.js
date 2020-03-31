@@ -5,7 +5,7 @@ import Rainbow from '../../images/Rainbow1.png';
 
 const BannerWrapper = styled.div`
   background: url(${Rainbow}) no-repeat scroll transparent;
-
+  background-color: #222;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,14 +27,13 @@ const BannerWrapper = styled.div`
 
   .banner-image {
     position: absolute;
-    top: 400px;
+    top: 390px;
     left: 30%;
 
     margin-left: -30px;
 
-    filter: saturate(1.5);
     img {
-      width: 180px;
+      width: 500px;
       height: 450px;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
@@ -46,10 +45,9 @@ const BannerWrapper = styled.div`
   .banner-h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    color: rgb(49, 47, 54);
+    color: #fff;
     font-size: calc(20px + 0.5vw);
-
-    .banner-z {
+    text-shadow: 2px 1px #39ff14;
       font-size: 2em;
     }
   }
@@ -61,7 +59,7 @@ const BannerWrapper = styled.div`
     top: 11%;
     right: 15%;
     font-family: 'Exo 2', sans-serif;
-    text-shadow: 1px 1px #fff;
+    color: #fff;
     padding-left: 170px;
     align-items: center;
     @media only screen and (max-width: 500px) {
@@ -82,7 +80,7 @@ const BannerWrapper = styled.div`
 
     align-items: center;
     font-size: 12px;
-    color: rgb(49, 47, 54);
+    color: #fff;
     text-transform: uppercase;
   }
 

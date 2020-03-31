@@ -66,7 +66,8 @@ const ContactWrapper = styled.div`
   @media only screen and (max-width: 795px) {
     flex-direction: column;
     .profile-wrapper {
-      height: 730px;
+      height: 500px;
+      margin: 20px;
     }
     .profile {
       width: 100%;

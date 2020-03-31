@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Fab22 from '../images/fab8.png';
+import Fab22 from '../images/MathewHero.png';
 
 import { Parallax } from 'react-scroll-parallax';
 
 import BannerWrapper from './containers/BannerWrapper';
 const ParallaxImage = props => (
-  <Parallax className="banner-image" offsetYMax={20} offsetYMin={-20} slowerScrollRate tag="figure">
+  <Parallax className="banner-image" offsetYMax={20} offsetYMin={-40} slowerScrollRate tag="figure">
     <img src={Fab22} />
   </Parallax>
 );
@@ -18,14 +18,13 @@ class Banner extends React.Component {
         <div className="banner-top">
           <div className="animated rubberBand banner-h1">
             <h1>
-              FABIAN<span className="banner-z">Z</span>VON
+              Mathew<span className="banner-z">S</span>cott
             </h1>
           </div>
           <div className="aside">
-            <p className="animated one slideInRight">Executive Producer</p>
+            <p className="animated four slideInLeft">Guitar Player</p>
+            <p className="animated one slideInRight">Start Lover</p>
             <p className="animated two slideInLeft">Creartor</p>
-
-            <p className="animated four slideInLeft">Futurist</p>
           </div>
         </div>
         <Parallax>
